@@ -1,0 +1,25 @@
+=== isolated profile package.json ===
+{
+  "name": "dsh-profile-e2e",
+  "private": true,
+  "dependencies": {
+    "dsh-excalidraw": "link:/Volumes/ZHITAI/DSHExcalidraw",
+    "dsh-excalidraw-e2e-probe": "link:/Volumes/ZHITAI/DSHExcalidraw/test/e2e/probe-bundle"
+  },
+  "dsh": {
+    "profile": {
+      "bundles": [
+        "@deepseek-ai/dsh-base",
+        "@deepseek-ai/dsh-web-app",
+        "dsh-excalidraw",
+        "dsh-excalidraw-e2e-probe"
+      ]
+    }
+  }
+}
+
+=== isolated instance boot line ===
+dsh web: http://127.0.0.1:49174/?token=<redacted>
+
+=== plugin health ===
+{"ok":true,"plugin":"dsh-excalidraw","version":"0.1.0","scenes":17,"bytes":24821,"drawingsDir":"/Volumes/ZHITAI/DSHExcalidraw/.tmp/e2e-home/excalidraw/drawings","editor":{"mounted":true,"lastEvent":"mounted","lastSeenAt":"2026-10-27T21:23:19.111Z","mountedAt":"2026-10-27T21:23:19.111Z","sceneName":"e2e-mvr6z2sy","elementCount":4,"width":945,"height":815,"build":"0.1.0","error":null,"events":8},"limits":{"maxElements":5000,"maxFiles":64,"maxFileBytes":8388608,"maxTextLength":20000,"maxBytes":16777216},"now":"2026-10-27T21:31:17.156Z"}

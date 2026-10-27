@@ -3,7 +3,7 @@
  *
  * The default field values below were captured from the official
  * `@excalidraw/excalidraw@0.18.1` `convertToExcalidrawElements` output (see
- * `docs/04-render-spike.md` and `spikes/render/artifacts/canonical-elements.json`).
+ * `docs/05-render-spike.md` and `spikes/render/artifacts/canonical-elements.json`).
  * The plugin authors its own subset rather than importing the Excalidraw package
  * on the Host, because that package is a browser application and its
  * sub-packages do not resolve cleanly outside a bundler.

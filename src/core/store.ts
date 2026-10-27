@@ -368,6 +368,21 @@ export class SceneStore {
   ): Promise<SceneRecord> {
     return this.withLock(name, async () => {
       const current = await this.read(name)
+      const alreadyApplied = this.findRequest(await this.readMeta(name), options.requestId)
+      if (alreadyApplied) {
+        // A retry of a write that already committed must return the committed
+        // facts, not a stale-fence conflict. The mutation is not run again.
+        return {
+          scene: current.scene,
+          revision: alreadyApplied.revision,
+          sha256: alreadyApplied.sha256,
+          byteLength: current.byteLength,
+          elementCount: current.elementCount,
+          updatedAt: alreadyApplied.at,
+          updatedBy: options.actor ?? 'agent',
+          duplicate: true,
+        }
+      }
       if (!options.force && options.expectedRevision !== undefined && options.expectedRevision !== current.revision) {
         throw new SceneError('revision_conflict', `scene "${name}" is at revision ${current.revision}, not ${options.expectedRevision}`, {
           name,

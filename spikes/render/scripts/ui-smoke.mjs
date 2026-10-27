@@ -63,6 +63,10 @@ async function main() {
     await page.waitForFunction(() => window.__EXCALIDRAW_READY__ === true, undefined, { timeout: 60000 })
     await page.waitForSelector('.excalidraw canvas', { timeout: 20000 })
     await page.waitForTimeout(900)
+    // Headless Chrome delivers keyboard events to the focused document only;
+    // a real click both focuses the canvas and dismisses the welcome state.
+    await page.mouse.click(1120, 180)
+    await page.waitForTimeout(300)
 
     const mounted = await page.evaluate(() => {
       const canvas = document.querySelector('.excalidraw canvas')
@@ -112,18 +116,28 @@ async function main() {
 
     const apiSurface = await page.evaluate(() => {
       const api = window.__EXCALIDRAW_API__
-      const names = [
-        'updateScene', 'getSceneElements', 'getAppState', 'getFiles', 'exportToSvg',
-        'exportToBlob', 'setActiveTool', 'scrollToContent', 'refresh',
+      const sceneNames = [
+        'updateScene', 'getSceneElements', 'getAppState', 'getFiles',
+        'setActiveTool', 'scrollToContent', 'refresh',
       ]
-      return Object.fromEntries(names.map(name => [name, typeof api[name]]))
+      const lib = window.__EXCALIDRAW_LIB__
+      const exportNames = ['exportToSvg', 'exportToBlob', 'exportToCanvas']
+      return {
+        api: Object.fromEntries(sceneNames.map(name => [name, typeof api[name]])),
+        lib: Object.fromEntries(exportNames.map(name => [name, typeof lib[name]])),
+      }
     })
     results.stages.apiSurface = apiSurface
     check(
-      'imperative API methods present',
-      ['updateScene', 'getSceneElements', 'getAppState', 'exportToSvg', 'exportToBlob']
-        .every(name => apiSurface[name] === 'function'),
-      apiSurface,
+      'imperative scene API methods present on the instance',
+      ['updateScene', 'getSceneElements', 'getAppState', 'getFiles']
+        .every(name => apiSurface.api[name] === 'function'),
+      apiSurface.api,
+    )
+    check(
+      'export helpers present as package-level exports',
+      apiSurface.lib.exportToSvg === 'function' && apiSurface.lib.exportToBlob === 'function',
+      apiSurface.lib,
     )
 
     // ---- programmatic updateScene ------------------------------------------

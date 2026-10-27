@@ -60,7 +60,7 @@ function App() {
   }, [])
   return React.createElement(Excalidraw, {
     excalidrawAPI: onApi,
-    initialData: { appState: { viewBackgroundColor: '#ffffff' } },
+    initialData: { appState: { viewBackgroundColor: '#ffffff', showWelcomeScreen: false } },
     UIOptions: {
       canvasActions: {
         export: false,

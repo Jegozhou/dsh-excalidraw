@@ -1,0 +1,675 @@
+{
+  "reactVersionFromTable": "18.3.1",
+  "requiredSpecifiers": [
+    "react",
+    "react",
+    "react/jsx-runtime",
+    "react",
+    "react",
+    "react",
+    "react/jsx-runtime",
+    "react",
+    "react",
+    "react",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react-dom",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react",
+    "react",
+    "react/jsx-runtime",
+    "react",
+    "react",
+    "react-dom",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react",
+    "react/jsx-runtime",
+    "react",
+    "react",
+    "react/jsx-runtime",
+    "react",
+    "react",
+    "react",
+    "react",
+    "react",
+    "react-dom",
+    "react",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react",
+    "react-dom",
+    "react/jsx-runtime",
+    "react",
+    "react",
+    "react",
+    "react",
+    "react",
+    "react",
+    "react",
+    "react",
+    "react",
+    "react",
+    "react",
+    "react/jsx-runtime",
+    "react",
+    "react",
+    "react",
+    "react-dom",
+    "react",
+    "react",
+    "react",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react",
+    "react",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react",
+    "react",
+    "react-dom",
+    "react",
+    "react/jsx-runtime",
+    "react",
+    "react",
+    "react",
+    "react",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react",
+    "react-dom",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react",
+    "react",
+    "react",
+    "react",
+    "react",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react-dom",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react",
+    "react",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react",
+    "react",
+    "react",
+    "react",
+    "react",
+    "react",
+    "react",
+    "react",
+    "react-dom",
+    "react",
+    "react",
+    "react",
+    "react",
+    "react-dom",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react-dom",
+    "react",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react/jsx-runtime",
+    "react",
+    "react/jsx-runtime"
+  ],
+  "registeredSlots": [
+    {
+      "injected": "conversation.composer.dock"
+    },
+    {
+      "definition": {
+        "name": "conversation.composer.dock",
+        "id": "excalidraw-canvas",
+        "order": 5
+      }
+    }
+  ],
+  "styles": [
+    "@local/dsh-excalidraw/excalidraw.css"
+  ],
+  "errors": [],
+  "mounted": true,
+  "bundleId": "@local/dsh-excalidraw",
+  "pluginExports": [
+    "Excalidraw",
+    "ExcalidrawSurface",
+    "PLUGIN_ID",
+    "api",
+    "apply",
+    "assetBase",
+    "convertToExcalidrawElements",
+    "excalidrawStylesheet",
+    "exportToBlob",
+    "exportToSvg",
+    "inject",
+    "injectStyles",
+    "serializeAsJSON",
+    "versions"
+  ],
+  "moduleTableReactVersion": "18.3.1",
+  "surfaceReactVersion": "18.3.1",
+  "styleTag": {
+    "dataPlugin": "@local/dsh-excalidraw",
+    "dataPluginCss": "@local/dsh-excalidraw/excalidraw.css",
+    "rules": 1050,
+    "bytes": 144921,
+    "fontUrls": [
+      "url(\"http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/assets/fonts/Assistant/Assistant-Regular.woff2\"",
+      "url(\"http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/assets/fonts/Assistant/Assistant-Medium.woff2\""
+    ]
+  },
+  "canvas": {
+    "width": 1280,
+    "height": 800
+  },
+  "assetPath": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/assets/",
+  "loaderMode": "live",
+  "registrationCount": 1,
+  "fonts": {
+    "excalifont": false,
+    "assistant": true,
+    "status": "loaded"
+  },
+  "fontsAfterText": {
+    "excalifont": true,
+    "families": [
+      "Assistant",
+      "Excalifont"
+    ]
+  },
+  "console": [
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Cascadia/CascadiaCode-Regular.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/ComicShanns/ComicShanns-Regular-279a7b317d12eb88de06167bd672b4b4.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/ComicShanns/ComicShanns-Regular-fcb0fc02dcbee4c9846b3e2508668039.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/ComicShanns/ComicShanns-Regular-dc6a8806fa96795d7b3be5026f989a17.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/ComicShanns/ComicShanns-Regular-6e066e8de2ac57ea9283adb9c24d7f0c.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Excalifont/Excalifont-Regular-a88b72a24fb54c9f94e3b5fdaa7481c9.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Excalifont/Excalifont-Regular-be310b9bcd4f1a43f571c46df7809174.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Excalifont/Excalifont-Regular-b9dcf9d2e50a1eaf42fc664b50a3fd0d.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Excalifont/Excalifont-Regular-41b173a47b57366892116a575a43e2b6.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Excalifont/Excalifont-Regular-3f2c5db56cc93c5a6873b1361d730c16.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Excalifont/Excalifont-Regular-349fac6ca4700ffec595a7150a0d1e1d.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Excalifont/Excalifont-Regular-623ccf21b21ef6b3a0d87738f77eb071.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Liberation/LiberationSans-Regular.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Lilita/Lilita-Regular-i7dPIFZ9Zz-WBtRtedDbYE98RXi4EwSsbg.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Lilita/Lilita-Regular-i7dPIFZ9Zz-WBtRtedDbYEF8RXi4EwQ.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Nunito/Nunito-Regular-XRXI3I6Li01BKofiOc5wtlZ2di8HDIkhdTk3j6zbXWjgevT5.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Nunito/Nunito-Regular-XRXI3I6Li01BKofiOc5wtlZ2di8HDIkhdTA3j6zbXWjgevT5.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Nunito/Nunito-Regular-XRXI3I6Li01BKofiOc5wtlZ2di8HDIkhdTs3j6zbXWjgevT5.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Nunito/Nunito-Regular-XRXI3I6Li01BKofiOc5wtlZ2di8HDIkhdTo3j6zbXWjgevT5.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Nunito/Nunito-Regular-XRXI3I6Li01BKofiOc5wtlZ2di8HDIkhdTQ3j6zbXWjgeg.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Virgil/Virgil-Regular.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Xiaolai/Xiaolai-Regular-09850c4077f3fffe707905872e0e2460.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Xiaolai/Xiaolai-Regular-7eb9fffd1aa890d07d0f88cc82e6cfe4.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Xiaolai/Xiaolai-Regular-60a3089806700d379f11827ee9843b6b.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Xiaolai/Xiaolai-Regular-6fe5c5973cc06f74b2387a631ea36b88.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Xiaolai/Xiaolai-Regular-b96d9226ce77ec94ceca043d712182e6.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Xiaolai/Xiaolai-Regular-6ae5b42180ad70b971c91e7eefb8eba2.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Xiaolai/Xiaolai-Regular-a4c34be6d42152e64b0df90bc4607f64.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Xiaolai/Xiaolai-Regular-c69f61a4ab18d0488c8d1fc12e7028e8.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "error",
+      "text": "Loading the font 'https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Xiaolai/Xiaolai-Regular-e3fcf5180fd466c8915c4e8069491054.woff2' violates the following Content Security Policy directive: \"font-src 'self'\". The action has been blocked.",
+      "location": {
+        "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+        "lineNumber": 42,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "consoleErrorCount": 230,
+  "pageErrors": [],
+  "cspViolationCount": 230,
+  "blockedFallbackUrls": [
+    "https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/Cascadia/CascadiaCode-Regular.woff2",
+    "https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/ComicShanns/ComicShanns-Regular-279a7b317d12eb88de06167bd672b4b4.woff2",
+    "https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/ComicShanns/ComicShanns-Regular-fcb0fc02dcbee4c9846b3e2508668039.woff2",
+    "https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/ComicShanns/ComicShanns-Regular-dc6a8806fa96795d7b3be5026f989a17.woff2",
+    "https://esm.sh/@excalidraw/excalidraw@0.18.1/dist/prod/fonts/ComicShanns/ComicShanns-Regular-6e066e8de2ac57ea9283adb9c24d7f0c.woff2"
+  ],
+  "externalResponses": [],
+  "localFontLog": 8
+}

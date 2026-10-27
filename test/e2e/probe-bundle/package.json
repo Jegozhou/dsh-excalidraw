@@ -1,0 +1,20 @@
+{
+  "name": "dsh-excalidraw-e2e-probe",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Test-only bundle: invokes the real Excalidraw agent tools inside an isolated Harness Host and writes a machine-readable report.",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

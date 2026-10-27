@@ -1,0 +1,63 @@
+{
+  "ok": true,
+  "sceneName": "e2e-mvr6z2sy",
+  "url": "http://127.0.0.1:49174/?token=<redacted>",
+  "steps": [
+    {
+      "name": "boot the isolated Harness page",
+      "ok": true
+    },
+    {
+      "name": "dismiss onboarding overlays",
+      "ok": true
+    },
+    {
+      "name": "open the Excalidraw panel from the sidebar",
+      "ok": true
+    },
+    {
+      "name": "create a scene from the panel",
+      "ok": true
+    },
+    {
+      "name": "draw a rectangle with a real pointer drag",
+      "ok": true
+    },
+    {
+      "name": "draw an arrow with a real pointer drag",
+      "ok": true
+    },
+    {
+      "name": "create text with a real click and keystrokes",
+      "ok": true
+    },
+    {
+      "name": "save with the keyboard shortcut and verify the file",
+      "ok": true
+    },
+    {
+      "name": "the Host records that the real editor mounted",
+      "ok": true
+    },
+    {
+      "name": "reload and reopen the scene from disk",
+      "ok": true
+    },
+    {
+      "name": "detect a concurrent writer and recover by overwriting",
+      "ok": true
+    },
+    {
+      "name": "reload after recovery and verify four elements survive",
+      "ok": true
+    },
+    {
+      "name": "the browser console stayed free of plugin errors",
+      "ok": true
+    }
+  ],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 409 (Conflict)"
+  ],
+  "generatedAt": "2026-10-27T21:23:19.842Z"
+}

@@ -1,0 +1,151 @@
+{
+  "requests": [
+    {
+      "url": "http://127.0.0.1:52388/dsh",
+      "method": "GET",
+      "resourceType": "document"
+    },
+    {
+      "url": "http://127.0.0.1:52388/static/page.css",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:52388/build/module-table.js",
+      "method": "GET",
+      "resourceType": "script"
+    },
+    {
+      "url": "http://127.0.0.1:52388/static/harness.js",
+      "method": "GET",
+      "resourceType": "script"
+    },
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+      "method": "GET",
+      "resourceType": "script"
+    },
+    {
+      "url": "http://127.0.0.1:52388/static/dsh-mount.js",
+      "method": "GET",
+      "resourceType": "script"
+    },
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/assets/fonts/Assistant/Assistant-Regular.woff2",
+      "method": "GET",
+      "resourceType": "font"
+    },
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/assets/fonts/Assistant/Assistant-Bold.woff2",
+      "method": "GET",
+      "resourceType": "font"
+    },
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/assets/fonts/Assistant/Assistant-Medium.woff2",
+      "method": "GET",
+      "resourceType": "font"
+    },
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/assets/fonts/Excalifont/Excalifont-Regular-a88b72a24fb54c9f94e3b5fdaa7481c9.woff2",
+      "method": "GET",
+      "resourceType": "font"
+    }
+  ],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:52388/dsh",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "contentLength": "",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "http://127.0.0.1:52388/static/page.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "contentLength": "",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "http://127.0.0.1:52388/static/harness.js",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "contentLength": "",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "http://127.0.0.1:52388/static/dsh-mount.js",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "contentLength": "",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "http://127.0.0.1:52388/build/module-table.js",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "contentLength": "",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client.js",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "contentLength": "",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/assets/fonts/Assistant/Assistant-Bold.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "contentLength": "",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/assets/fonts/Assistant/Assistant-Regular.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "contentLength": "",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/assets/fonts/Assistant/Assistant-Medium.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "contentLength": "",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/assets/fonts/Excalifont/Excalifont-Regular-a88b72a24fb54c9f94e3b5fdaa7481c9.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "contentLength": "",
+      "cacheControl": "no-store"
+    }
+  ],
+  "externalHosts": [],
+  "fontRequests": [
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/assets/fonts/Assistant/Assistant-Bold.woff2",
+      "status": 200,
+      "contentType": "font/woff2"
+    },
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/assets/fonts/Assistant/Assistant-Regular.woff2",
+      "status": 200,
+      "contentType": "font/woff2"
+    },
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/assets/fonts/Assistant/Assistant-Medium.woff2",
+      "status": 200,
+      "contentType": "font/woff2"
+    },
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/assets/fonts/Excalifont/Excalifont-Regular-a88b72a24fb54c9f94e3b5fdaa7481c9.woff2",
+      "status": 200,
+      "contentType": "font/woff2"
+    }
+  ],
+  "failedResponses": [],
+  "requestFailures": []
+}

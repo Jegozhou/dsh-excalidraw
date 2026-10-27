@@ -24,7 +24,8 @@
     "icon.svg",
     "README.md",
     "LICENSE",
-    "THIRD_PARTY_NOTICES.md"
+    "THIRD_PARTY_NOTICES.md",
+    "assets/fonts/NOTICE.md"
   ],
   "main": "./lib/index.js",
   "repository": {
@@ -60,11 +61,12 @@
   "scripts": {
     "build": "node build.mjs",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "test": "node --test test/",
-    "test:unit": "node --test test/unit/",
-    "test:integration": "node --test test/integration/",
+    "test": "node --test test/unit/*.test.ts test/integration/*.test.ts",
+    "test:unit": "node --test test/unit/*.test.ts",
+    "test:integration": "node --test test/integration/*.test.ts",
     "verify": "node scripts/verify.mjs",
-    "prepare": "node build.mjs"
+    "prepare": "node build.mjs",
+    "test:e2e": "node test/e2e/dsh-ui.e2e.mjs"
   },
   "devDependencies": {
     "@excalidraw/element": "0.18.0-f0063e113",

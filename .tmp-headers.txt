@@ -1,9 +1,0 @@
-HTTP/1.1 401 Unauthorized
-cache-control: no-store
-content-type: text/plain; charset=utf-8
-Vary: Accept-Encoding
-Date: Tue, 27 Oct 2026 20:51:05 GMT
-Connection: keep-alive
-Keep-Alive: timeout=5
-Transfer-Encoding: chunked
-

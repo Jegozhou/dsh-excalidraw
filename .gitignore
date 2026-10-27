@@ -9,3 +9,13 @@ spikes/render/.cache/
 upstream/
 .tmp*
 spikes/render/artifacts/*.png
+.build/
+spikes/render/public/build/
+spikes/render/public/assets/
+spikes/render/public/lazy/
+spikes/render/dist/
+spikes/render/artifacts/
+test/artifacts/
+test/e2e/artifacts/
+spikes/render/dsh-bundle/client.js
+spikes/render/dsh-bundle/lib/assets/

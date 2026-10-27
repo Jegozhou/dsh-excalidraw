@@ -8,7 +8,7 @@
  */
 
 import { SceneError } from '../core/errors.ts'
-import { createScene, normalizeScene, summarizeScene } from '../core/scene.ts'
+import { createScene, mergeAppState, normalizeScene, summarizeScene } from '../core/scene.ts'
 import type { SceneLimits } from '../core/scene.ts'
 import { applyOperations } from '../core/scene.ts'
 import type { Scene, SceneOperation } from '../core/types.ts'
@@ -62,6 +62,7 @@ export interface SavePayload {
 export interface ApplyPayload {
   expectedRevision: number
   operations: SceneOperation[]
+  appState?: unknown
   requestId?: string
   actor?: string
 }
@@ -156,6 +157,7 @@ export class ExcalidrawService {
     await this.ready()
     const result = await this.store.mutate(name, (scene) => {
       const applied = applyOperations(scene, payload.operations)
+      if (payload.appState !== undefined) applied.scene.appState = mergeAppState(applied.scene, payload.appState)
       return applied.scene
     }, {
       actor: payload.actor ?? 'agent',

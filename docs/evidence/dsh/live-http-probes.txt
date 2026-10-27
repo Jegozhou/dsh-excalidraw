@@ -1,0 +1,45 @@
+Live HTTP probes against the running DeepSeek Harness Web GUI
+=============================================================
+Host:     0.2.1-rc.2 (installed app), profile "desktop"
+GUI URL:  http://127.0.0.1:49163
+Date:     2026-10-28 (Asia/Shanghai)
+Method:   curl from the agent shell (no browser cookie, no launch token)
+
+Observed status lines (verbatim `curl -w` output)
+-------------------------------------------------
+1) GET /scale-commander/api/health            (no cookie)
+   status=401 type=application/json; charset=utf-8
+   body: {"error":{"code":"unauthorized","message":"this page is not authenticated for the Harness API"}}
+
+2) GET /scale-commander/api/health            (Host: evil.example)
+   status=403
+
+3) GET /scale-commander/api/nope              (no cookie)
+   status=401
+
+4) GET /                                (no cookie)
+   HTTP/1.1 401 Unauthorized
+   cache-control: no-store
+   content-type: text/plain; charset=utf-8
+   Vary: Accept-Encoding
+   body (68 bytes, plain text)
+
+5) GET /plugins/dsh-scale-commander/client.js            -> status=404 len=0
+   GET /plugins/dsh-scale-commander/client.js?rev=0      -> status=404 len=0
+   GET /plugins                                         -> status=404 len=0
+
+Interpretation (what this proves and what it does not)
+------------------------------------------------------
+- (1) proves the reference plugin's `prefix` route `/scale-commander/api` is LIVE in the
+  running profile, and that its Connection fence rejects a caller with no browser session.
+  The JSON envelope and the message string are byte-identical to
+  /Volumes/ZHITAI/ScaleInsights插件开发/package/src/host/api.js:150-186 (the plugin's own
+  `{error:{code,message}}` shape), so the request reached plugin code and was refused there.
+- (2) proves the Host-header/Origin trust fence runs BEFORE authentication: a foreign
+  authority yields 403, not 401. That matches packages/client/connection/src/rpc-host.ts:129-137
+  (`if (!this.isTrusted(request)) return { rejection: 403 }`).
+- (4) proves the page document itself is behind the same browser-session cookie.
+- (5) is NOT evidence of an unauthenticated plug-in bundle. The `/plugins` route only serves
+  the exact advertised revisioned combo URLs (packages/client/modules/src/index.ts:1256-1269
+  falls through to 404 for any unadvertised combination), and the real `rev` is a hash this
+  shell never sees. What the probe does prove: arbitrary guesses under `/plugins` are 404.

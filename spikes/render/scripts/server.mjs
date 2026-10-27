@@ -50,7 +50,10 @@ const PLUGIN_PREFIX = '/plugins/@local/dsh-excalidraw'
 
 function route(pathname) {
   if (pathname === '/') return { file: join(PUBLIC_DIR, 'standalone.html'), document: 'standalone' }
-  if (pathname === '/dsh') return { file: join(PUBLIC_DIR, 'dsh.html'), document: 'dsh' }
+  if (pathname === '/dsh' || pathname === '/dsh-csp') {
+    return { file: join(PUBLIC_DIR, 'dsh.html'), document: pathname === '/dsh-csp' ? 'dsh-csp' : 'dsh' }
+  }
+  if (pathname === '/dsh-lean') return { file: join(PUBLIC_DIR, 'dsh-lean.html'), document: 'dsh' }
   const mappings = [
     ['/build/', join(PUBLIC_DIR, 'build')],
     ['/static/', join(PUBLIC_DIR, 'static')],
@@ -65,7 +68,10 @@ function route(pathname) {
     }
   }
   if (pathname === `${PLUGIN_PREFIX}/client.js`) {
-    return { file: join(PUBLIC_DIR, 'build', 'dsh-client.js'), document: null }
+    return { file: join(PUBLIC_DIR, '..', 'dsh-bundle/client.js'), document: null }
+  }
+  if (pathname === `${PLUGIN_PREFIX}/client-lean.js`) {
+    return { file: join(PUBLIC_DIR, 'build', 'dsh-client-lean.js'), document: null }
   }
   if (pathname.startsWith(`${PLUGIN_PREFIX}/assets/`)) {
     const rel = normalize(decodeURIComponent(pathname.slice(`${PLUGIN_PREFIX}/assets/`.length)))
@@ -87,10 +93,12 @@ async function serveFile(file) {
  */
 export async function startServer(options = {}) {
   const csp = options.csp !== false
+  const log = []
   const server = createServer(async (req, res) => {
+    const pathname = new URL(req.url ?? '/', 'http://127.0.0.1').pathname
+    const entry = route(pathname)
+    log.push({ method: req.method, path: pathname, url: req.url })
     try {
-      const pathname = new URL(req.url ?? '/', 'http://127.0.0.1').pathname
-      const entry = route(pathname)
       if (entry === null) {
         res.writeHead(404, { 'content-type': 'text/plain' }).end('not found')
         return
@@ -100,7 +108,7 @@ export async function startServer(options = {}) {
         'content-type': MIME[extname(entry.file)] ?? 'application/octet-stream',
         'cache-control': 'no-store',
       }
-      if (entry.document === 'dsh' && csp) headers['content-security-policy'] = STRICT_CSP
+      if (entry.document === 'dsh-csp' && csp) headers['content-security-policy'] = STRICT_CSP
       if (req.method === 'HEAD') {
         res.writeHead(200, { ...headers, 'content-length': body.byteLength }).end()
         return
@@ -118,6 +126,7 @@ export async function startServer(options = {}) {
   const origin = `http://127.0.0.1:${address.port}`
   return {
     origin,
+    log,
     url: (path = '/') => `${origin}${path}`,
     csp,
     close: () => new Promise(resolveClose => server.close(resolveClose)),

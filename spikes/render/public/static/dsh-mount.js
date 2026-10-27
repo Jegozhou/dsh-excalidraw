@@ -18,7 +18,9 @@
   }
 
   try {
-    const plugin = harness.materialize('@local/dsh-excalidraw')
+    const bundleId = document.body.dataset.bundleId || '@local/dsh-excalidraw'
+    const plugin = harness.materialize(bundleId)
+    results.bundleId = bundleId
     results.requiredSpecifiers = harness.required.slice()
 
     if (typeof plugin.apply !== 'function') throw new Error('plugin module has no apply(ctx)')

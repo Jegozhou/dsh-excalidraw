@@ -1,0 +1,88 @@
+LIVE PROFILE / INSTALLATION TOPOLOGY (read-only)
+=================================================
+sampled: 2026-10-28 Asia/Shanghai
+
+## versions
+dsh --version            -> 0.2.1-rc.2
+DSH_HOME                 -> /Users/mozhouwen/.dsh
+DSH_PROFILE              -> desktop
+DSH_PROFILE_DIR          -> /Users/mozhouwen/.dsh/profiles/desktop
+
+## app.asar/dsh/node_modules/@deepseek-ai/dsh-client-modules/package.json (excerpt)
+  "version": "0.2.1-rc.2"
+  "dsh": { "client": { "platform": "web", "inject": [], "immediately": true } }
+  "exports": { "./client": { "default": "./lib/client.js" } }
+
+## public clone (upstream/deepseek-harness)
+  commit 22ddee3792402c3e70ec5f86a63c3e3e895a2f60  (2026-10-23)
+  root package.json version -> 0.2.1-rc.3  (packages/client/modules, packages/core/tools, packages/client/ui-slots all 0.2.1-rc.3)
+
+## profile package.json
+{
+  "name": "dsh-profile-desktop",
+  "private": true,
+  "dependencies": {
+    "@deepseek-ai/dsh-subagent-codex": "0.2.1-rc.2",
+    "@local/dsh-hypit-studio": "link:/Volumes/ZHITAI/dsh-hypit插件",
+    "@local/dsh-scale-commander": "link:/Volumes/ZHITAI/ScaleInsights插件开发/package",
+    "ds-bot": "^0.1.5",
+    "dsh-plugin-marketplace": "github:bradeGithub/DSH-Plugins-Marketplace",
+    "dsh-workbuddy-connect": "0.7.7"
+  },
+  "dsh": {
+    "profile": {
+      "bundles": [
+        "@deepseek-ai/dsh-base",
+        "@deepseek-ai/dsh-web-app",
+        "ds-bot",
+        "dsh-plugin-marketplace",
+        "dsh-workbuddy-connect",
+        "@local/dsh-scale-commander",
+        "@deepseek-ai/dsh-experimental-agent-team-profile",
+        "@deepseek-ai/dsh-subagent-codex",
+        "@local/dsh-hypit-studio"
+      ]
+    }
+  }
+}
+
+## node_modules/@local symlinks
+total 0
+lrwxr-xr-x@ 1 mozhouwen  staff  51 Oct 23 02:36 dsh-hypit-studio -> ../../../../../../../Volumes/ZHITAI/dsh-hypit插件
+lrwxr-xr-x@ 1 mozhouwen  staff  69 Oct 20 04:06 dsh-scale-commander -> ../../../../../../../Volumes/ZHITAI/ScaleInsights插件开发/package
+
+## $DSH_HOME top level
+attachments
+bot
+cache
+dsh-runtimes
+hypit-studio
+llm-deepseek
+marketplace
+profiles
+redteam
+scale-commander
+sessions
+settings.yaml.before-xhs-repair-20260818
+settings.yaml.imported
+skills
+storages
+
+## plugin-owned data directories already present under $DSH_HOME
+scale-commander.sqlite
+scale-commander.sqlite-shm
+scale-commander.sqlite-wal
+---
+cache
+jobs.json
+projects
+projects.json
+settings.json
+
+## $DSH_HOME/storages (default json backend root)
+message_feedback.json
+session_projcache
+session_projcache.json
+workspace.json
+xhs_agents.json
+xhs_ops.json

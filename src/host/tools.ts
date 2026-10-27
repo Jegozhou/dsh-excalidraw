@@ -10,7 +10,7 @@
  * @module host/tools
  */
 
-import { isSceneError } from '../core/errors.ts'
+import { isSceneError, SceneError } from '../core/errors.ts'
 import { validateScene } from '../core/elements.ts'
 import type { SceneOperation } from '../core/types.ts'
 import type { ExcalidrawService } from './service.ts'
@@ -174,6 +174,7 @@ export function registerTools(ctx: ToolsContext, service: ExcalidrawService): Ar
       const applied = await service.apply(name, {
         expectedRevision,
         operations: args.operations as SceneOperation[],
+        appState: args.app_state,
         requestId: optionalString(args, 'request_id'),
         actor: 'agent',
       })
@@ -215,7 +216,7 @@ export function registerTools(ctx: ToolsContext, service: ExcalidrawService): Ar
 function requireString(args: Record<string, unknown>, key: string): string {
   const value = args[key]
   if (typeof value !== 'string' || value.length === 0) {
-    throw Object.assign(new Error(`"${key}" must be a non-empty string`), { code: 'invalid_operation' })
+    throw new SceneError('invalid_operation', `"${key}" must be a non-empty string`, { field: key })
   }
   return value
 }
@@ -224,7 +225,7 @@ function requireString(args: Record<string, unknown>, key: string): string {
 function requireNumber(args: Record<string, unknown>, key: string): number {
   const value = args[key]
   if (typeof value !== 'number' || !Number.isFinite(value)) {
-    throw Object.assign(new Error(`"${key}" must be a finite number`), { code: 'invalid_operation' })
+    throw new SceneError('invalid_operation', `"${key}" must be a finite number`, { field: key })
   }
   return value
 }

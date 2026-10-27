@@ -1,0 +1,45 @@
+cordis_inspect_query attempts against the live Host (0.2.1-rc.2, profile desktop)
+==================================================================================
+Date: 2026-10-28 (Asia/Shanghai)
+
+WHAT WORKED
+-----------
+host  Service.listService   (no input)              -> 86,480-byte catalog
+      saved verbatim: docs/evidence/dsh/host-Service.listService.catalog.txt
+host  Tool.listTools        (no input)              -> 123,450-byte tool list
+      saved verbatim: docs/evidence/dsh/host-Tool.listTools.txt
+host  Config.listConfigs    (no input)              -> 204 entries, first page of 25
+      saved verbatim: docs/evidence/dsh/host-Config.listConfigs.p1.txt
+
+WHAT FAILED, WITH THE EXACT ERROR
+---------------------------------
+1) Any hosted query that PASSES an `input` argument was rejected by the inspect bridge,
+   even for a trivially valid body. Verbatim errors:
+
+   cordis_inspect_query(platform:"host", provider:"Service", method:"listService",
+                        input:{"service":"tools"})
+     -> Error: Host Cordis inspect Service.listService rejected input: "input" must be an object
+
+   Same error for input:{} , for input passed as a JSON string, and for
+   Slots.listSubTree with input:{"root":"main"}.
+
+   Consequence: the one-plugin "exact contract" views (Service.listService with a service
+   key, Config.listConfigs with name/entry/offset, Slots.listSubTree with a root) could not
+   be collected. The compact catalog + the full Tool list + the Config directory were.
+
+2) Every CLIENT-platform query failed on the page transport, not on input validation:
+
+   cordis_inspect_query(platform:"client", provider:"Builtin", method:"listBuiltins")
+     -> Error: Builtin.listBuiltins: Client inspect query Builtin.listBuiltins timed out
+        after 10000ms. Open or reconnect the Harness page, then retry.
+
+   cordis_inspect_query(platform:"client", provider:"Slots", method:"listSubTree")
+     -> Error: Slots.listSubTree: Client inspect query Slots.listSubTree timed out after
+        10000ms. Open or reconnect the Harness page, then retry.
+
+   Consequence: no live slot tree (main / sidebar.panellist / conversation.view /
+   conversation.composer.dock) was captured. Slot facts in docs/02-dsh-platform.md are
+   therefore cited from (a) the installed-version skill reference that ships inside
+   app.asar, (b) the public clone at 0.2.1-rc.3, and (c) the reference plugin's proven
+   registration. The live slot tree remains UNVERIFIED and should be re-collected with the
+   page open and connected.

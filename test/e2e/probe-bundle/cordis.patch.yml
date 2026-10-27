@@ -1,0 +1,8 @@
+# Test-only probe: runs after dsh-excalidraw in an isolated profile and proves
+# the agent tools are callable through the real Host tool registry.
+- insert:
+    - id: dsh-excalidraw-e2e-probe
+      name: 'dsh-excalidraw-e2e-probe'
+      config:
+        output: '/Volumes/ZHITAI/DSHExcalidraw/test/e2e/artifacts/agent-probe-report.json'
+        scene: 'agent-probe'

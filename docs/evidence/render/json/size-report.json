@@ -1,0 +1,198 @@
+{
+  "generatedAt": "2026-10-27T21:19:00.599Z",
+  "versions": {
+    "excalidraw": "0.18.1",
+    "react19": "19.2.0",
+    "reactDom19": "19.2.0",
+    "react18": "18.3.1",
+    "reactDom18": "18.3.1",
+    "esbuild": "0.28.1",
+    "node": "v24.15.0"
+  },
+  "dshBundleId": "@local/dsh-excalidraw",
+  "bundles": {
+    "standalone": {
+      "path": "public/build/standalone.js",
+      "raw": 8586560,
+      "gzip": 2568692,
+      "brotli": 1986477,
+      "includesReact": true,
+      "note": "IIFE, all Excalidraw lazy imports inlined; no runtime network beyond local fonts."
+    },
+    "dshClient": {
+      "path": "dsh-bundle/client.js",
+      "raw": 8395789,
+      "gzip": 2507785,
+      "brotli": 1933834,
+      "requiresReact": true,
+      "external": [
+        "react",
+        "react-dom",
+        "react-dom/client",
+        "react/jsx-runtime"
+      ],
+      "note": "Closure factory for window.__ModuleLoader__.load; CSS injected as tagged <style>."
+    },
+    "dshClientLean": {
+      "path": "public/build/dsh-client-lean.js",
+      "raw": 4897476,
+      "gzip": 1403540,
+      "brotli": 1054701,
+      "rewrittenImportSpecifiers": 59,
+      "note": "Lazy Excalidraw chunks left external and rewritten to /lazy/ (host route in DSH)."
+    },
+    "splitEsmProbe": {
+      "entry": {
+        "name": "entry.js",
+        "raw": 729885,
+        "gzip": 207629,
+        "brotli": 168909
+      },
+      "chunkCount": 54,
+      "total": 8321212,
+      "largestChunks": [
+        {
+          "label": "chunks/chunk-5GHNF3TF.js",
+          "bytes": 1821931
+        },
+        {
+          "label": "entry.js",
+          "bytes": 729885
+        },
+        {
+          "label": "chunks/chunk-T2P35TFA.js",
+          "bytes": 667777
+        },
+        {
+          "label": "chunks/chunk-NDADSKBH.js",
+          "bytes": 529804
+        },
+        {
+          "label": "chunks/chunk-4FTGNSYE.js",
+          "bytes": 443174
+        },
+        {
+          "label": "chunks/katex-NZ4WKKK4.js",
+          "bytes": 267710
+        },
+        {
+          "label": "chunks/chunk-XJHZVIOF.js",
+          "bytes": 240113
+        },
+        {
+          "label": "chunks/architectureDiagram-5GKGNRK7-GCF5MZI3.js",
+          "bytes": 152967
+        }
+      ],
+      "note": "Size probe only: initial ESM entry when Excalidraw dynamic imports are split into chunks. Not a DSH loader artifact."
+    },
+    "moduleTableReact18": {
+      "path": "public/build/module-table.js",
+      "raw": 142027,
+      "gzip": 45640,
+      "brotli": 39931
+    }
+  },
+  "assets": {
+    "excalidrawProd": {
+      "distProdFiles": [
+        "chunk-6U3AYISY.js",
+        "chunk-EIO257PC.js",
+        "chunk-K2UTITRG.js",
+        "chunk-SRAX5OIU.js",
+        "chunk-Z3N5DIM6.js",
+        "chunk-ZUYEQ4TG.js",
+        "data",
+        "fonts",
+        "index.css",
+        "index.js",
+        "locales",
+        "subset-shared.chunk.js",
+        "subset-worker.chunk.js"
+      ],
+      "locales": {
+        "files": 55,
+        "bytes": 1648766,
+        "count": 55
+      },
+      "fonts": {
+        "files": 234,
+        "bytes": 13107068
+      },
+      "cssBytes": 144689,
+      "excalidrawIndexJsBytes": 502077,
+      "chunks": [
+        {
+          "name": "chunk-6U3AYISY.js",
+          "bytes": 22458
+        },
+        {
+          "name": "chunk-EIO257PC.js",
+          "bytes": 1824966
+        },
+        {
+          "name": "chunk-K2UTITRG.js",
+          "bytes": 439257
+        },
+        {
+          "name": "chunk-SRAX5OIU.js",
+          "bytes": 603
+        },
+        {
+          "name": "chunk-Z3N5DIM6.js",
+          "bytes": 640
+        },
+        {
+          "name": "chunk-ZUYEQ4TG.js",
+          "bytes": 1572
+        },
+        {
+          "name": "subset-shared.chunk.js",
+          "bytes": 174
+        },
+        {
+          "name": "subset-worker.chunk.js",
+          "bytes": 376
+        }
+      ]
+    },
+    "copiedFonts": {
+      "files": 234,
+      "bytes": 13107068
+    },
+    "lazyChunks": {
+      "files": 64,
+      "bytes": 3939001
+    }
+  },
+  "esbuild": {
+    "standaloneInputs": 2289,
+    "standaloneBytesByInput": {
+      "node_modules/.pnpm/@excalidraw+excalidraw@0.18.1_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/@excalidraw/excalidraw/dist/prod/chunk-EIO257PC.js": 1824492,
+      "node_modules/.pnpm/@mermaid-js+parser@1.2.1/node_modules/@mermaid-js/parser/dist/chunks/mermaid-parser.core/chunk-FOHPRMQF.mjs": 676616,
+      "node_modules/.pnpm/@excalidraw+excalidraw@0.18.1_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/@excalidraw/excalidraw/dist/prod/index.js": 497239,
+      "node_modules/.pnpm/cytoscape@3.34.4/node_modules/cytoscape/dist/cytoscape.esm.mjs": 447431,
+      "node_modules/.pnpm/@excalidraw+excalidraw@0.18.1_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/@excalidraw/excalidraw/dist/prod/chunk-K2UTITRG.js": 445819,
+      "node_modules/.pnpm/katex@0.16.47/node_modules/katex/dist/katex.mjs": 272765,
+      "node_modules/.pnpm/mermaid@11.17.2/node_modules/mermaid/dist/chunks/mermaid.core/chunk-DU6HZSFF.mjs": 199860,
+      "node_modules/.pnpm/react-dom@19.2.0_react@19.2.0/node_modules/react-dom/cjs/react-dom-client.production.js": 178374,
+      "node_modules/.pnpm/@excalidraw+excalidraw@0.18.1_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/@excalidraw/excalidraw/dist/prod/index.css": 144701,
+      "node_modules/.pnpm/mermaid@11.17.2/node_modules/mermaid/dist/chunks/mermaid.core/sequenceDiagram-WJ2MYXX4.mjs": 117952,
+      "node_modules/.pnpm/mermaid@11.17.2/node_modules/mermaid/dist/chunks/mermaid.core/swimlanes-42K2YHIH.mjs": 115718,
+      "node_modules/.pnpm/mermaid@11.17.2/node_modules/mermaid/dist/chunks/mermaid.core/chunk-4HAMMTFA.mjs": 106610,
+      "node_modules/.pnpm/@excalidraw+excalidraw@0.18.1_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/@excalidraw/excalidraw/dist/prod/locales/uk-UA-QMV73CPH.js": 75004,
+      "node_modules/.pnpm/@excalidraw+excalidraw@0.18.1_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/@excalidraw/excalidraw/dist/prod/locales/mr-IN-CRQNXWMA.js": 74593,
+      "node_modules/.pnpm/@excalidraw+excalidraw@0.18.1_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/@excalidraw/excalidraw/dist/prod/locales/ru-RU-B4JR7IUQ.js": 72520,
+      "node_modules/.pnpm/@excalidraw+excalidraw@0.18.1_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/@excalidraw/excalidraw/dist/prod/locales/el-GR-BZB4AONW.js": 69579,
+      "node_modules/.pnpm/@excalidraw+excalidraw@0.18.1_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/@excalidraw/excalidraw/dist/prod/locales/ku-TR-6OUDTVRD.js": 68599,
+      "node_modules/.pnpm/mermaid@11.17.2/node_modules/mermaid/dist/chunks/mermaid.core/c4Diagram-7LVT6UL2.mjs": 66382,
+      "node_modules/.pnpm/@excalidraw+excalidraw@0.18.1_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/@excalidraw/excalidraw/dist/prod/locales/km-KH-HSX4SM5Z.js": 64841,
+      "node_modules/.pnpm/mermaid@11.17.2/node_modules/mermaid/dist/chunks/mermaid.core/chunk-SHT3W25Y.mjs": 62605,
+      "node_modules/.pnpm/@excalidraw+excalidraw@0.18.1_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/@excalidraw/excalidraw/dist/prod/locales/ta-IN-2NMHFXQM.js": 61925,
+      "node_modules/.pnpm/layout-base@2.0.1/node_modules/layout-base/layout-base.js": 59439,
+      "node_modules/.pnpm/@excalidraw+excalidraw@0.18.1_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/@excalidraw/excalidraw/dist/prod/locales/ar-SA-G6X2FPQ2.js": 57479,
+      "node_modules/.pnpm/@excalidraw+excalidraw@0.18.1_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/@excalidraw/excalidraw/dist/prod/locales/hi-IN-IWLTKZ5I.js": 55294,
+      "node_modules/.pnpm/@excalidraw+excalidraw@0.18.1_react-dom@19.2.0_react@19.2.0__react@19.2.0/node_modules/@excalidraw/excalidraw/dist/prod/locales/fa-IR-HGAKTJCU.js": 53376
+    }
+  }
+}

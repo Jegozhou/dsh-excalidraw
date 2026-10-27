@@ -1,0 +1,31 @@
+{
+  "name": "@local/dsh-excalidraw",
+  "version": "0.0.0-spike",
+  "private": true,
+  "type": "module",
+  "description": "Spike DSH client package wrapping the genuine @excalidraw/excalidraw 0.18.1 React component",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": "./client.js",
+    "./assets/*": "./lib/assets/*",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [],
+      "immediately": false
+    }
+  },
+  "files": [
+    "client.js",
+    "lib"
+  ],
+  "peerDependencies": {
+    "react": "^18.2.0 || ^19.0.0",
+    "react-dom": "^18.2.0 || ^19.0.0"
+  }
+}

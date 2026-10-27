@@ -15,9 +15,9 @@
 import { build } from 'esbuild'
 import { cp, rm, mkdir, readFile, writeFile, readdir, stat } from 'node:fs/promises'
 import { createRequire } from 'node:module'
-import { join } from 'node:path'
+import { dirname, join, resolve } from 'node:path'
 import { gzipSync, brotliCompressSync, constants as zlibConstants } from 'node:zlib'
-import { PUBLIC_DIR, DIST_DIR, ensureDirs } from './lib.mjs'
+import { PUBLIC_DIR, DIST_DIR, SPIKE_ROOT, ensureDirs } from './lib.mjs'
 
 const require = createRequire(import.meta.url)
 const PLUGIN_ID = '@local/dsh-excalidraw'
@@ -105,6 +105,9 @@ async function buildModuleTable() {
     minify: true,
     legalComments: 'none',
     define: { 'process.env.NODE_ENV': '"production"' },
+    // react-dom@18.3.1 must see react@18.3.1: the repo root also has react 19
+    // for the standalone build, so alias the internal specifiers explicitly.
+    alias: { react: 'react18', 'react-dom': 'react-dom18' },
     logLevel: 'warning',
   })
   return sizeOf(await readFile(join(PUBLIC_DIR, 'build/module-table.js')))
@@ -142,7 +145,8 @@ async function buildDshBundle() {
     '});',
     '',
   ].join('\n')
-  const outPath = join(PUBLIC_DIR, 'build/dsh-client.js')
+  const outPath = join(SPIKE_ROOT, 'dsh-bundle/client.js')
+  await mkdir(dirname(outPath), { recursive: true })
   await writeFile(outPath, wrapped)
   await rm(innerPath, { force: true })
   return {
@@ -220,6 +224,47 @@ async function buildLean() {
   return { result, size: sizeOf(Buffer.from(wrapped)), outPath, rewriteCount }
 }
 
+async function buildSplitProbe() {
+  // Size probe only (not a DSH artifact): ESM output with code splitting shows
+  // how large the *initial* client bundle is when Excalidraw's dynamic imports
+  // (locales, mermaid, export chunk) become separate lazy chunks.
+  const outdir = join(PUBLIC_DIR, 'build/esm-split')
+  await rm(outdir, { recursive: true, force: true })
+  const result = await build({
+    entryPoints: ['src/dsh-entry.js'],
+    outdir,
+    bundle: true,
+    format: 'esm',
+    splitting: true,
+    chunkNames: 'chunks/[name]-[hash]',
+    entryNames: 'entry',
+    target: ['chrome120'],
+    platform: 'browser',
+    minify: true,
+    legalComments: 'none',
+    conditions: CONDITIONS,
+    define: DEFINE,
+    loader: LOADERS,
+    external: ['react', 'react-dom', 'react-dom/client', 'react/jsx-runtime'],
+    metafile: true,
+    logLevel: 'warning',
+  })
+  const outputs = Object.entries(result.metafile.outputs).map(([name, info]) => ({
+    name,
+    label: name.replace('public/build/esm-split/', ''),
+    bytes: info.bytes,
+    entryPoint: info.entryPoint ?? null,
+  })).sort((a, b) => b.bytes - a.bytes)
+  const entry = outputs.find(output => output.entryPoint !== null)
+  const entryBuffer = await readFile(resolve(process.cwd(), entry.name))
+  return {
+    entry: { name: entry.label, ...sizeOf(entryBuffer) },
+    chunkCount: outputs.filter(output => output.entryPoint === null).length,
+    total: outputs.reduce((sum, output) => sum + output.bytes, 0),
+    largestChunks: outputs.slice(0, 8).map(({ label, bytes }) => ({ label, bytes })),
+  }
+}
+
 async function inventory() {
   const prodFiles = await readdir(PROD_DIR)
   const locales = await dirSize(join(PROD_DIR, 'locales'))
@@ -254,6 +299,8 @@ async function main() {
   console.log('building lean DSH bundle (lazy chunks external)...')
   const lean = await buildLean()
   console.log('copying fonts + lazy chunks...')
+  console.log('building split-ESM size probe...')
+  const splitProbe = await buildSplitProbe()
   const fontsCopied = await copyFonts()
   const lazyCopied = await copyLazyChunks()
 
@@ -269,7 +316,7 @@ async function main() {
         note: 'IIFE, all Excalidraw lazy imports inlined; no runtime network beyond local fonts.',
       },
       dshClient: {
-        path: 'public/build/dsh-client.js',
+        path: 'dsh-bundle/client.js',
         ...dsh.size,
         requiresReact: dsh.requiresReact,
         external: ['react', 'react-dom', 'react-dom/client', 'react/jsx-runtime'],
@@ -280,6 +327,10 @@ async function main() {
         ...lean.size,
         rewrittenImportSpecifiers: lean.rewriteCount,
         note: 'Lazy Excalidraw chunks left external and rewritten to /lazy/ (host route in DSH).',
+      },
+      splitEsmProbe: {
+        ...splitProbe,
+        note: 'Size probe only: initial ESM entry when Excalidraw dynamic imports are split into chunks. Not a DSH loader artifact.',
       },
       moduleTableReact18: {
         path: 'public/build/module-table.js',
@@ -294,10 +345,10 @@ async function main() {
     esbuild: {
       standaloneInputs: Object.keys(standalone.result.metafile.inputs).length,
       standaloneBytesByInput: Object.fromEntries(
-        Object.entries(standalone.result.metafile.inputs)
-          .map(([name, info]) => [name, info.bytesInOutput])
-          .sort((a, b) => b[1] - a[1])
-          .slice(0, 20),
+        Object.entries(Object.entries(standalone.result.metafile.outputs).find(([name]) => name.endsWith('.js'))[1].inputs)
+          .sort((a, b) => b[1].bytesInOutput - a[1].bytesInOutput)
+          .slice(0, 25)
+          .map(([name, info]) => [name, info.bytesInOutput]),
       ),
     },
   }

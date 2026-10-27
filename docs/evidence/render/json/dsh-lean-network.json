@@ -1,0 +1,170 @@
+{
+  "requests": [
+    {
+      "url": "http://127.0.0.1:52388/dsh-lean",
+      "method": "GET",
+      "resourceType": "document"
+    },
+    {
+      "url": "http://127.0.0.1:52388/static/page.css",
+      "method": "GET",
+      "resourceType": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:52388/build/module-table.js",
+      "method": "GET",
+      "resourceType": "script"
+    },
+    {
+      "url": "http://127.0.0.1:52388/static/harness.js",
+      "method": "GET",
+      "resourceType": "script"
+    },
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client-lean.js",
+      "method": "GET",
+      "resourceType": "script"
+    },
+    {
+      "url": "http://127.0.0.1:52388/static/dsh-mount.js",
+      "method": "GET",
+      "resourceType": "script"
+    },
+    {
+      "url": "http://127.0.0.1:52388/lazy/locales/en-B4ZKOASM.js",
+      "method": "GET",
+      "resourceType": "script"
+    },
+    {
+      "url": "http://127.0.0.1:52388/lazy/chunk-6U3AYISY.js",
+      "method": "GET",
+      "resourceType": "script"
+    },
+    {
+      "url": "http://127.0.0.1:52388/lazy/chunk-SRAX5OIU.js",
+      "method": "GET",
+      "resourceType": "script"
+    },
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/assets/fonts/Assistant/Assistant-Regular.woff2",
+      "method": "GET",
+      "resourceType": "font"
+    },
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/assets/fonts/Assistant/Assistant-Bold.woff2",
+      "method": "GET",
+      "resourceType": "font"
+    },
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/assets/fonts/Assistant/Assistant-Medium.woff2",
+      "method": "GET",
+      "resourceType": "font"
+    }
+  ],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:52388/dsh-lean",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "contentLength": "",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "http://127.0.0.1:52388/static/page.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "contentLength": "",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "http://127.0.0.1:52388/static/dsh-mount.js",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "contentLength": "",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "http://127.0.0.1:52388/static/harness.js",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "contentLength": "",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "http://127.0.0.1:52388/build/module-table.js",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "contentLength": "",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/client-lean.js",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "contentLength": "",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "http://127.0.0.1:52388/lazy/locales/en-B4ZKOASM.js",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "contentLength": "",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "http://127.0.0.1:52388/lazy/chunk-SRAX5OIU.js",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "contentLength": "",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "http://127.0.0.1:52388/lazy/chunk-6U3AYISY.js",
+      "status": 200,
+      "contentType": "text/javascript; charset=utf-8",
+      "contentLength": "",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/assets/fonts/Assistant/Assistant-Regular.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "contentLength": "",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/assets/fonts/Assistant/Assistant-Bold.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "contentLength": "",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/assets/fonts/Assistant/Assistant-Medium.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "contentLength": "",
+      "cacheControl": "no-store"
+    }
+  ],
+  "externalHosts": [],
+  "fontRequests": [
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/assets/fonts/Assistant/Assistant-Regular.woff2",
+      "status": 200,
+      "contentType": "font/woff2"
+    },
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/assets/fonts/Assistant/Assistant-Bold.woff2",
+      "status": 200,
+      "contentType": "font/woff2"
+    },
+    {
+      "url": "http://127.0.0.1:52388/plugins/@local/dsh-excalidraw/assets/fonts/Assistant/Assistant-Medium.woff2",
+      "status": 200,
+      "contentType": "font/woff2"
+    }
+  ],
+  "failedResponses": [],
+  "requestFailures": []
+}

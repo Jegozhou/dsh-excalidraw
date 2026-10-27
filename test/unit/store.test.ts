@@ -29,7 +29,7 @@ async function makeScene(label = 'box') {
 }
 
 after(async () => {
-  await Promise.all(directories.map(dir => fs.rm(dir, { recursive: true, force: true })))
+  await Promise.all(directories.map(dir => fs.rm(dir, { recursive: true, force: true, maxRetries: 5, retryDelay: 50 })))
 })
 
 test('create writes bytes + metadata and reports verified evidence', async () => {

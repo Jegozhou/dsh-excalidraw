@@ -1,0 +1,32 @@
+=== plugin_manager install_bundle result (from session) ===
+stage: enable
+target: dsh-excalidraw
+enabled: true
+changed: true
+application: restart-required
+restartReason: package-moved
+packageResult.exitCode: 0
+bundle: dsh-excalidraw
+version: 0.1.0
+
+=== live desktop profile bundles ===
+{
+  "dependencies": {
+    "dsh-excalidraw": "link:/Volumes/ZHITAI/DSHExcalidraw"
+  },
+  "bundles": [
+    "@deepseek-ai/dsh-base",
+    "@deepseek-ai/dsh-web-app",
+    "ds-bot",
+    "dsh-plugin-marketplace",
+    "dsh-workbuddy-connect",
+    "@local/dsh-scale-commander",
+    "@deepseek-ai/dsh-experimental-agent-team-profile",
+    "@deepseek-ai/dsh-subagent-codex",
+    "@local/dsh-hypit-studio",
+    "dsh-excalidraw"
+  ]
+}
+
+=== live plugin package link ===
+lrwxr-xr-x@ 1 mozhouwen  staff  46 Oct 28 05:03 /Users/mozhouwen/.dsh/profiles/desktop/node_modules/dsh-excalidraw -> ../../../../../../Volumes/ZHITAI/DSHExcalidraw

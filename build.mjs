@@ -24,6 +24,7 @@ const excalidrawDist = join(pkg, 'node_modules', '@excalidraw', 'excalidraw', 'd
 
 rmSync(lib, { recursive: true, force: true })
 mkdirSync(lib, { recursive: true })
+mkdirSync(join(pkg, '.build'), { recursive: true })
 
 // 1. Host half.
 execFileSync(join(pkg, 'node_modules', '.bin', 'esbuild'), [
@@ -71,6 +72,9 @@ if (existsSync(clientEntry)) {
     '--platform=browser',
     '--target=es2022',
     '--jsx=automatic',
+    '--loader:.css=text',
+    '--conditions=production',
+    '--metafile=' + join(pkg, '.build', 'client-metafile.json'),
     '--outfile=' + raw,
     '--minify',
     '--legal-comments=none',

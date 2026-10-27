@@ -1,0 +1,838 @@
+{
+  "generatedAt": "2026-10-27T21:19:06.545Z",
+  "server": "http://127.0.0.1:52348",
+  "stages": {
+    "mount": {
+      "lib": {
+        "package": "@excalidraw/excalidraw",
+        "version": "0.18.1",
+        "reactVersion": "19.2.0"
+      },
+      "canvas": {
+        "width": 1280,
+        "height": 800
+      },
+      "rootBox": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 800,
+        "top": 0,
+        "right": 1280,
+        "bottom": 800,
+        "left": 0
+      },
+      "styleTag": true,
+      "assetPath": "http://127.0.0.1:52348/assets/"
+    },
+    "afterRectangle": {
+      "count": 1,
+      "types": [
+        "rectangle"
+      ],
+      "elements": [
+        {
+          "id": "ZwmxfaWQZ3E6ZmnYwB36Z",
+          "type": "rectangle",
+          "x": 260,
+          "y": 220,
+          "width": 280,
+          "height": 160,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 1,
+          "opacity": 100,
+          "groupIds": [],
+          "frameId": null,
+          "index": "a0",
+          "roundness": {
+            "type": 3
+          },
+          "seed": 1491757627,
+          "version": 14,
+          "versionNonce": 1154370203,
+          "isDeleted": false,
+          "boundElements": null,
+          "updated": 1793135950328,
+          "link": null,
+          "locked": false
+        }
+      ]
+    },
+    "afterArrow": {
+      "count": 2,
+      "types": [
+        "rectangle",
+        "arrow"
+      ],
+      "elements": [
+        {
+          "id": "ZwmxfaWQZ3E6ZmnYwB36Z",
+          "type": "rectangle",
+          "x": 260,
+          "y": 220,
+          "width": 280,
+          "height": 160,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 1,
+          "opacity": 100,
+          "groupIds": [],
+          "frameId": null,
+          "index": "a0",
+          "roundness": {
+            "type": 3
+          },
+          "seed": 1491757627,
+          "version": 14,
+          "versionNonce": 1154370203,
+          "isDeleted": false,
+          "boundElements": null,
+          "updated": 1793135950328,
+          "link": null,
+          "locked": false
+        },
+        {
+          "id": "11SQkY2CbQ2Amf97AwzT3",
+          "type": "arrow",
+          "x": 300,
+          "y": 440,
+          "width": 340,
+          "height": 100,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 1,
+          "opacity": 100,
+          "groupIds": [],
+          "frameId": null,
+          "index": "a1",
+          "roundness": {
+            "type": 2
+          },
+          "seed": 1729275381,
+          "version": 15,
+          "versionNonce": 53548091,
+          "isDeleted": false,
+          "boundElements": null,
+          "updated": 1793135951428,
+          "link": null,
+          "locked": false,
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              340,
+              100
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": "arrow",
+          "elbowed": false
+        }
+      ]
+    },
+    "afterText": {
+      "count": 3,
+      "types": [
+        "rectangle",
+        "arrow",
+        "text"
+      ],
+      "elements": [
+        {
+          "id": "ZwmxfaWQZ3E6ZmnYwB36Z",
+          "type": "rectangle",
+          "x": 260,
+          "y": 220,
+          "width": 280,
+          "height": 160,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 1,
+          "opacity": 100,
+          "groupIds": [],
+          "frameId": null,
+          "index": "a0",
+          "roundness": {
+            "type": 3
+          },
+          "seed": 1491757627,
+          "version": 14,
+          "versionNonce": 1154370203,
+          "isDeleted": false,
+          "boundElements": null,
+          "updated": 1793135950328,
+          "link": null,
+          "locked": false
+        },
+        {
+          "id": "11SQkY2CbQ2Amf97AwzT3",
+          "type": "arrow",
+          "x": 300,
+          "y": 440,
+          "width": 340,
+          "height": 100,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 1,
+          "opacity": 100,
+          "groupIds": [],
+          "frameId": null,
+          "index": "a1",
+          "roundness": {
+            "type": 2
+          },
+          "seed": 1729275381,
+          "version": 15,
+          "versionNonce": 53548091,
+          "isDeleted": false,
+          "boundElements": null,
+          "updated": 1793135951428,
+          "link": null,
+          "locked": false,
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              340,
+              100
+            ]
+          ],
+          "lastCommittedPoint": null,
+          "startBinding": null,
+          "endBinding": null,
+          "startArrowhead": null,
+          "endArrowhead": "arrow",
+          "elbowed": false
+        },
+        {
+          "id": "gaaOK_7QIAaZ_j4d_jBy0",
+          "type": "text",
+          "x": 300,
+          "y": 620,
+          "width": 153.0598907470703,
+          "height": 25,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 1,
+          "opacity": 100,
+          "groupIds": [],
+          "frameId": null,
+          "index": "a2",
+          "roundness": null,
+          "seed": 70236757,
+          "version": 18,
+          "versionNonce": 1305190165,
+          "isDeleted": false,
+          "boundElements": null,
+          "updated": 1793135952499,
+          "link": null,
+          "locked": false,
+          "text": "Hello Excalidraw",
+          "fontSize": 20,
+          "fontFamily": 5,
+          "textAlign": "left",
+          "verticalAlign": "top",
+          "containerId": null,
+          "originalText": "Hello Excalidraw",
+          "autoResize": true,
+          "lineHeight": 1.25
+        }
+      ]
+    },
+    "apiSurface": {
+      "api": {
+        "updateScene": "function",
+        "getSceneElements": "function",
+        "getAppState": "function",
+        "getFiles": "function",
+        "setActiveTool": "function",
+        "scrollToContent": "function",
+        "refresh": "function"
+      },
+      "lib": {
+        "exportToSvg": "function",
+        "exportToBlob": "function",
+        "exportToCanvas": "function"
+      }
+    },
+    "afterUpdateScene": {
+      "requested": [
+        {
+          "type": "rectangle",
+          "x": 80,
+          "y": 80,
+          "width": 200,
+          "height": 120,
+          "backgroundColor": "#a5d8ff",
+          "fillStyle": "solid"
+        },
+        {
+          "type": "ellipse",
+          "x": 340,
+          "y": 80,
+          "width": 160,
+          "height": 120,
+          "backgroundColor": "#ffec99",
+          "fillStyle": "solid"
+        },
+        {
+          "type": "text",
+          "x": 80,
+          "y": 260,
+          "text": "updateScene works"
+        }
+      ],
+      "types": [
+        "rectangle",
+        "ellipse",
+        "text"
+      ],
+      "count": 3,
+      "elements": [
+        {
+          "id": "eaR5Ii_HJjOwua-heH-uU",
+          "type": "rectangle",
+          "x": 80,
+          "y": 80,
+          "width": 200,
+          "height": 120,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "#a5d8ff",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 1,
+          "opacity": 100,
+          "groupIds": [],
+          "frameId": null,
+          "index": "a0",
+          "roundness": null,
+          "seed": 1489280469,
+          "version": 2,
+          "versionNonce": 1263410843,
+          "isDeleted": false,
+          "boundElements": null,
+          "updated": 1793135953439,
+          "link": null,
+          "locked": false
+        },
+        {
+          "id": "GVof2gLVwdsmPP7pF1iRA",
+          "type": "ellipse",
+          "x": 340,
+          "y": 80,
+          "width": 160,
+          "height": 120,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "#ffec99",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 1,
+          "opacity": 100,
+          "groupIds": [],
+          "frameId": null,
+          "index": "a1",
+          "roundness": null,
+          "seed": 2042402299,
+          "version": 2,
+          "versionNonce": 1864166549,
+          "isDeleted": false,
+          "boundElements": null,
+          "updated": 1793135953439,
+          "link": null,
+          "locked": false
+        },
+        {
+          "id": "g190QpCnfR4doPzIsytcQ",
+          "type": "text",
+          "x": 80,
+          "y": 260,
+          "width": 185.2598419189453,
+          "height": 25,
+          "angle": 0,
+          "strokeColor": "#1e1e1e",
+          "backgroundColor": "transparent",
+          "fillStyle": "solid",
+          "strokeWidth": 2,
+          "strokeStyle": "solid",
+          "roughness": 1,
+          "opacity": 100,
+          "groupIds": [],
+          "frameId": null,
+          "index": "a2",
+          "roundness": null,
+          "seed": 2122062645,
+          "version": 2,
+          "versionNonce": 1323668283,
+          "isDeleted": false,
+          "boundElements": null,
+          "updated": 1793135953439,
+          "link": null,
+          "locked": false,
+          "text": "updateScene works",
+          "fontSize": 20,
+          "fontFamily": 5,
+          "textAlign": "left",
+          "verticalAlign": "top",
+          "containerId": null,
+          "originalText": "updateScene works",
+          "autoResize": true,
+          "lineHeight": 1.25
+        }
+      ]
+    },
+    "exportToSvg": {
+      "bytes": 7377,
+      "width": "880",
+      "height": "450"
+    },
+    "exportToBlob": {
+      "bytes": 10357,
+      "type": "image/png",
+      "signature": "89504e470d0a1a0a"
+    },
+    "fonts": {
+      "status": "loaded",
+      "families": [
+        "Assistant",
+        "Cascadia",
+        "\"Comic Shanns\"",
+        "Excalifont",
+        "\"Liberation Sans\"",
+        "\"Lilita One\"",
+        "Nunito",
+        "Virgil",
+        "Xiaolai"
+      ],
+      "excalifont": true,
+      "assistant": true,
+      "resizeObserver": "function",
+      "devicePixelRatio": 2
+    },
+    "console": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+        "location": {
+          "url": "http://127.0.0.1:52348/favicon.ico",
+          "lineNumber": 0,
+          "columnNumber": 0
+        }
+      },
+      {
+        "type": "error",
+        "text": "Failed to use workers for subsetting, falling back to the main thread. WorkerUrlNotDefinedError: Worker URL is not defined!\n    at xLe.create (http://127.0.0.1:52348/build/standalone.js:45:73754)\n    at http://127.0.0.1:52348/build/standalone.js:45:75496\n    at async http://127.0.0.1:52348/build/standalone.js:45:74960\n    at async xT.getContent (http://127.0.0.1:52348/build/standalone.js:45:76083)\n    at async http://127.0.0.1:52348/build/standalone.js:45:197397",
+        "location": {
+          "url": "http://127.0.0.1:52348/build/standalone.js",
+          "lineNumber": 44,
+          "columnNumber": 75156
+        }
+      }
+    ],
+    "pageErrors": [],
+    "securityPolicyViolations": [],
+    "network": {
+      "externalHosts": [],
+      "fontRequests": [
+        {
+          "url": "http://127.0.0.1:52348/assets/fonts/Assistant/Assistant-Regular.woff2",
+          "status": 200,
+          "contentType": "font/woff2"
+        },
+        {
+          "url": "http://127.0.0.1:52348/assets/fonts/Assistant/Assistant-Bold.woff2",
+          "status": 200,
+          "contentType": "font/woff2"
+        },
+        {
+          "url": "http://127.0.0.1:52348/assets/fonts/Assistant/Assistant-Medium.woff2",
+          "status": 200,
+          "contentType": "font/woff2"
+        },
+        {
+          "url": "http://127.0.0.1:52348/assets/fonts/Excalifont/Excalifont-Regular-a88b72a24fb54c9f94e3b5fdaa7481c9.woff2",
+          "status": 200,
+          "contentType": "font/woff2"
+        },
+        {
+          "url": "http://127.0.0.1:52348/assets/fonts/Excalifont/Excalifont-Regular-a88b72a24fb54c9f94e3b5fdaa7481c9.woff2",
+          "status": 200,
+          "contentType": "font/woff2"
+        }
+      ],
+      "failedResponses": [],
+      "requestFailures": []
+    },
+    "crash": null,
+    "slot": {
+      "before": {
+        "root": {
+          "width": 720,
+          "height": 480
+        },
+        "canvas": {
+          "width": 720,
+          "height": 480
+        },
+        "excalidrawBox": {
+          "x": 26,
+          "y": 26,
+          "width": 720,
+          "height": 480,
+          "top": 26,
+          "right": 746,
+          "bottom": 506,
+          "left": 26
+        }
+      },
+      "after": {
+        "root": {
+          "width": 520,
+          "height": 360
+        },
+        "canvas": {
+          "width": 520,
+          "height": 360
+        }
+      },
+      "console": [],
+      "pageErrors": []
+    }
+  },
+  "assertions": [
+    {
+      "name": "component mounts and canvas has size",
+      "ok": true,
+      "detail": {
+        "width": 1280,
+        "height": 800
+      }
+    },
+    {
+      "name": "library surface exposed",
+      "ok": true,
+      "detail": "0.18.1"
+    },
+    {
+      "name": "real mouse drag creates a rectangle",
+      "ok": true,
+      "detail": {
+        "count": 1,
+        "types": [
+          "rectangle"
+        ],
+        "elements": [
+          {
+            "id": "ZwmxfaWQZ3E6ZmnYwB36Z",
+            "type": "rectangle",
+            "x": 260,
+            "y": 220,
+            "width": 280,
+            "height": 160,
+            "angle": 0,
+            "strokeColor": "#1e1e1e",
+            "backgroundColor": "transparent",
+            "fillStyle": "solid",
+            "strokeWidth": 2,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "frameId": null,
+            "index": "a0",
+            "roundness": {
+              "type": 3
+            },
+            "seed": 1491757627,
+            "version": 14,
+            "versionNonce": 1154370203,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1793135950328,
+            "link": null,
+            "locked": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "real mouse drag creates an arrow",
+      "ok": true,
+      "detail": {
+        "count": 2,
+        "types": [
+          "rectangle",
+          "arrow"
+        ],
+        "elements": [
+          {
+            "id": "ZwmxfaWQZ3E6ZmnYwB36Z",
+            "type": "rectangle",
+            "x": 260,
+            "y": 220,
+            "width": 280,
+            "height": 160,
+            "angle": 0,
+            "strokeColor": "#1e1e1e",
+            "backgroundColor": "transparent",
+            "fillStyle": "solid",
+            "strokeWidth": 2,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "frameId": null,
+            "index": "a0",
+            "roundness": {
+              "type": 3
+            },
+            "seed": 1491757627,
+            "version": 14,
+            "versionNonce": 1154370203,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1793135950328,
+            "link": null,
+            "locked": false
+          },
+          {
+            "id": "11SQkY2CbQ2Amf97AwzT3",
+            "type": "arrow",
+            "x": 300,
+            "y": 440,
+            "width": 340,
+            "height": 100,
+            "angle": 0,
+            "strokeColor": "#1e1e1e",
+            "backgroundColor": "transparent",
+            "fillStyle": "solid",
+            "strokeWidth": 2,
+            "strokeStyle": "solid",
+            "roughness": 1,
+            "opacity": 100,
+            "groupIds": [],
+            "frameId": null,
+            "index": "a1",
+            "roundness": {
+              "type": 2
+            },
+            "seed": 1729275381,
+            "version": 15,
+            "versionNonce": 53548091,
+            "isDeleted": false,
+            "boundElements": null,
+            "updated": 1793135951428,
+            "link": null,
+            "locked": false,
+            "points": [
+              [
+                0,
+                0
+              ],
+              [
+                340,
+                100
+              ]
+            ],
+            "lastCommittedPoint": null,
+            "startBinding": null,
+            "endBinding": null,
+            "startArrowhead": null,
+            "endArrowhead": "arrow",
+            "elbowed": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "real keyboard input creates a text element",
+      "ok": true,
+      "detail": [
+        "rectangle",
+        "arrow",
+        "text"
+      ]
+    },
+    {
+      "name": "imperative scene API methods present on the instance",
+      "ok": true,
+      "detail": {
+        "updateScene": "function",
+        "getSceneElements": "function",
+        "getAppState": "function",
+        "getFiles": "function",
+        "setActiveTool": "function",
+        "scrollToContent": "function",
+        "refresh": "function"
+      }
+    },
+    {
+      "name": "export helpers present as package-level exports",
+      "ok": true,
+      "detail": {
+        "exportToSvg": "function",
+        "exportToBlob": "function",
+        "exportToCanvas": "function"
+      }
+    },
+    {
+      "name": "convertToExcalidrawElements + updateScene replaces the scene",
+      "ok": true,
+      "detail": [
+        "rectangle",
+        "ellipse",
+        "text"
+      ]
+    },
+    {
+      "name": "exportToSvg returns an SVG document",
+      "ok": true,
+      "detail": {
+        "bytes": 7377,
+        "width": "880",
+        "height": "450"
+      }
+    },
+    {
+      "name": "exportToBlob returns a PNG",
+      "ok": true,
+      "detail": {
+        "bytes": 10357,
+        "type": "image/png",
+        "signature": "89504e470d0a1a0a"
+      }
+    },
+    {
+      "name": "local Excalifont loaded for canvas text",
+      "ok": true,
+      "detail": {
+        "status": "loaded",
+        "families": [
+          "Assistant",
+          "Cascadia",
+          "\"Comic Shanns\"",
+          "Excalifont",
+          "\"Liberation Sans\"",
+          "\"Lilita One\"",
+          "Nunito",
+          "Virgil",
+          "Xiaolai"
+        ],
+        "excalifont": true,
+        "assistant": true,
+        "resizeObserver": "function",
+        "devicePixelRatio": 2
+      }
+    },
+    {
+      "name": "ResizeObserver available",
+      "ok": true
+    },
+    {
+      "name": "no page errors",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "no CSP violations",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "no external network requests",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "fonts served from the local origin",
+      "ok": true,
+      "detail": [
+        "http://127.0.0.1:52348/assets/fonts/Assistant/Assistant-Regular.woff2",
+        "http://127.0.0.1:52348/assets/fonts/Assistant/Assistant-Bold.woff2",
+        "http://127.0.0.1:52348/assets/fonts/Assistant/Assistant-Medium.woff2",
+        "http://127.0.0.1:52348/assets/fonts/Excalifont/Excalifont-Regular-a88b72a24fb54c9f94e3b5fdaa7481c9.woff2",
+        "http://127.0.0.1:52348/assets/fonts/Excalifont/Excalifont-Regular-a88b72a24fb54c9f94e3b5fdaa7481c9.woff2"
+      ]
+    },
+    {
+      "name": "Excalidraw fills a 720x480 slot",
+      "ok": true,
+      "detail": {
+        "root": {
+          "width": 720,
+          "height": 480
+        },
+        "canvas": {
+          "width": 720,
+          "height": 480
+        },
+        "excalidrawBox": {
+          "x": 26,
+          "y": 26,
+          "width": 720,
+          "height": 480,
+          "top": 26,
+          "right": 746,
+          "bottom": 506,
+          "left": 26
+        }
+      }
+    },
+    {
+      "name": "Excalidraw follows a container resize (ResizeObserver)",
+      "ok": true,
+      "detail": {
+        "root": {
+          "width": 520,
+          "height": 360
+        },
+        "canvas": {
+          "width": 520,
+          "height": 360
+        }
+      }
+    },
+    {
+      "name": "no page errors in slot page",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "failed": [],
+  "durationMs": 9477
+}

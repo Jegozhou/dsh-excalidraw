@@ -1,0 +1,36 @@
+{
+  "platform": "host",
+  "provider": "Config",
+  "method": "listConfigs",
+  "data": {
+    "entries": [
+      { "id": "include", "patchId": "include", "name": "cordis:include", "status": "tree" },
+      { "id": "include:tool-plugin-manager", "patchId": "tool-plugin-manager", "name": "@deepseek-ai/dsh-plugin-manager/tools", "status": "inactive" },
+      { "id": "include:plugin-manager", "patchId": "plugin-manager", "name": "@deepseek-ai/dsh-plugin-manager", "status": "schema" },
+      { "id": "include:timer", "patchId": "timer", "name": "@deepseek-ai/cordis-plugin-timer", "status": "absent" },
+      { "id": "include:hmr", "patchId": "hmr", "name": "@deepseek-ai/dsh-hmr", "status": "schema" },
+      { "id": "include:llm", "patchId": "llm", "name": "@deepseek-ai/dsh-llm", "status": "absent" },
+      { "id": "include:deepseek-llm-api-extensions", "patchId": "deepseek-llm-api-extensions", "name": "@deepseek-ai/dsh-deepseek-llm-api-extensions", "status": "absent" },
+      { "id": "include:session", "patchId": "session", "name": "@deepseek-ai/dsh-session", "status": "absent" },
+      { "id": "include:session-log-deepseek", "patchId": "session-log-deepseek", "name": "@deepseek-ai/dsh-session-log-deepseek", "status": "schema" },
+      { "id": "include:typert", "patchId": "typert", "name": "@deepseek-ai/dsh-typert-registry", "status": "absent" },
+      { "id": "include:typert-loader", "patchId": "typert-loader", "name": "@deepseek-ai/dsh-typert-loader", "status": "schema" },
+      { "id": "include:typert-gateway", "patchId": "typert-gateway", "name": "@deepseek-ai/dsh-api-gateway", "status": "schema" },
+      { "id": "include:remote-access", "patchId": "remote-access", "name": "@deepseek-ai/dsh-api-remote-access", "status": "absent" },
+      { "id": "include:session-title", "patchId": "session-title", "name": "@deepseek-ai/dsh-session-title", "status": "schema" },
+      { "id": "include:session-title-llm", "patchId": "session-title-llm", "name": "@deepseek-ai/dsh-session-title-first-prompt-llm", "status": "schema" },
+      { "id": "include:user-questions", "patchId": "user-questions", "name": "@deepseek-ai/dsh-user-questions", "status": "schema" },
+      { "id": "include:agent", "patchId": "agent", "name": "@deepseek-ai/dsh-agent", "status": "absent" },
+      { "id": "include:plugin-package-inventory-deepseek", "patchId": "plugin-package-inventory-deepseek", "name": "@deepseek-ai/dsh-plugin-package-inventory-deepseek", "status": "schema" },
+      { "id": "include:agent-default-model", "patchId": "agent-default-model", "name": "@deepseek-ai/dsh-agent-default-model", "status": "schema" },
+      { "id": "include:jobs", "patchId": "jobs", "name": "@deepseek-ai/dsh-jobs-local", "status": "schema" },
+      { "id": "include:llm-retry", "patchId": "llm-retry", "name": "@deepseek-ai/dsh-llm-retry", "status": "schema" },
+      { "id": "include:config-editor", "patchId": "config-editor", "name": "@deepseek-ai/dsh-config-editor", "status": "absent" },
+      { "id": "include:settings", "patchId": "settings", "name": "@deepseek-ai/dsh-settings", "status": "absent" },
+      { "id": "include:authorization", "patchId": "authorization", "name": "@deepseek-ai/dsh-authorization", "status": "absent" },
+      { "id": "include:deepseek-account", "patchId": "deepseek-account", "name": "@deepseek-ai/dsh-deepseek-account-platform", "status": "schema" }
+    ],
+    "total": 204,
+    "nextOffset": 25
+  }
+}

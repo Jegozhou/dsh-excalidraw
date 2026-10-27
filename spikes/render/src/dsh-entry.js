@@ -57,10 +57,14 @@ export function ExcalidrawSurface() {
   }, [])
   return React.createElement(
     'div',
-    { className: 'dsh-excalidraw-surface', style: { position: 'relative', width: '100%', height: '100%' } },
+    {
+      className: 'dsh-excalidraw-surface',
+      'data-react-version': React.version,
+      style: { position: 'relative', width: '100%', height: '100%' },
+    },
     React.createElement(Excalidraw, {
       excalidrawAPI: onApi,
-      initialData: { appState: { viewBackgroundColor: '#ffffff' } },
+      initialData: { appState: { viewBackgroundColor: '#ffffff', showWelcomeScreen: false } },
       UIOptions: {
         canvasActions: {
           export: false,
