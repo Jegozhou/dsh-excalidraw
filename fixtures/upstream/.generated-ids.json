@@ -1,0 +1,40 @@
+{
+  "s1": [
+    "frame-pipeline:frame",
+    "node-api:rectangle",
+    "node-vault:diamond",
+    "text-title:text",
+    "text-caption:text",
+    "cwDWeCb0:text",
+    "rZ8HAaOH:text"
+  ],
+  "s2": [
+    "node-start:rectangle",
+    "node-end:rectangle",
+    "edge-1:arrow",
+    "node-third:ellipse",
+    "edge-2:arrow",
+    "VmtwK7fI:text",
+    "unjklQwo:text",
+    "RA7H2yvB:text",
+    "3BywqKJd:text"
+  ],
+  "s3": [
+    "image-preview:image",
+    "text-image-caption:text"
+  ],
+  "s4": [
+    "freedraw-pen-stroke:freedraw"
+  ],
+  "s5": [
+    "md-title:text",
+    "md-note:rectangle",
+    "GdgwkMoY:text"
+  ],
+  "s6": [
+    "md-image:image",
+    "md-link-rect:rectangle",
+    "md-caption:text",
+    "5yktynQt:text"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "Excalidraw Scenes",
+    "description": "Draw on a real Excalidraw canvas inside Harness, save versioned .excalidraw files, and let agents create or edit scenes through typed, revision-checked tools."
+  },
+  "panel": "Excalidraw",
+  "panelHint": "Drawings",
+  "newScene": "New scene",
+  "sceneName": "Scene name",
+  "open": "Open",
+  "save": "Save",
+  "saving": "Saving…",
+  "saved": "Saved",
+  "unsaved": "Unsaved changes",
+  "reload": "Reload from disk",
+  "overwrite": "Overwrite anyway",
+  "empty": "No scenes yet. Create one to start drawing.",
+  "error": "Something went wrong",
+  "revision": "Revision",
+  "elements": "Elements",
+  "conflict": "This scene changed on disk while you were editing.",
+  "conflictDetail": "Reload to keep the on-disk version, or overwrite to save your canvas as the next revision.",
+  "cancel": "Cancel",
+  "create": "Create",
+  "nameInvalid": "Use lowercase letters, digits, dots, dashes or underscores (no path).",
+  "editorLoading": "Loading the canvas…",
+  "editorFailed": "The Excalidraw canvas could not start."
+}

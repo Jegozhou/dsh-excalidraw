@@ -1,0 +1,17 @@
+{
+  "name": "dsh-expt-fixture",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Minimal reproducible DSH plugin used only by the isolated install experiment in docs/02-dsh-platform.md.",
+  "exports": { ".": "./lib/index.js", "./client": "./lib/client.js" },
+  "main": "./lib/index.js",
+  "files": ["lib/index.js", "lib/client.js", "cordis.patch.yml"],
+  "engines": { "node": ">=22.5" },
+  "dsh": {
+    "plugin": true,
+    "kind": "server",
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": { "platform": "web", "immediately": true }
+  }
+}

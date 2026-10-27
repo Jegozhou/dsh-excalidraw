@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "Excalidraw 画布",
+    "description": "在 Harness 内使用真实 Excalidraw 画布绘图，保存带修订号的 .excalidraw 文件，并允许 Agent 通过带类型与修订校验的工具创建、读取和修改场景。"
+  },
+  "panel": "Excalidraw",
+  "panelHint": "绘图",
+  "newScene": "新建场景",
+  "sceneName": "场景名称",
+  "open": "打开",
+  "save": "保存",
+  "saving": "保存中…",
+  "saved": "已保存",
+  "unsaved": "有未保存的更改",
+  "reload": "从磁盘重新加载",
+  "overwrite": "仍然覆盖",
+  "empty": "还没有场景。新建一个开始绘图。",
+  "error": "出错了",
+  "revision": "修订",
+  "elements": "元素",
+  "conflict": "编辑期间该场景在磁盘上已被修改。",
+  "conflictDetail": "重新加载以保留磁盘版本，或覆盖以把你的画布保存为下一个修订。",
+  "cancel": "取消",
+  "create": "创建",
+  "nameInvalid": "仅使用小写字母、数字、点、短横线或下划线（不能包含路径）。",
+  "editorLoading": "正在加载画布…",
+  "editorFailed": "Excalidraw 画布未能启动。"
+}

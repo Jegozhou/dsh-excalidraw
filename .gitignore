@@ -1,0 +1,8 @@
+node_modules/
+.cache/
+.tmp/
+*.log
+.DS_Store
+test-results/
+spikes/render/node_modules/
+spikes/render/.cache/

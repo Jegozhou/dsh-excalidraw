@@ -1,0 +1,18 @@
+{
+  "name": "dsh-excalidraw-render-spike",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Empirical spike: bundle @excalidraw/excalidraw for the DSH client-plugin loader",
+  "dependencies": {
+    "@excalidraw/excalidraw": "0.18.1",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react18": "npm:react@18.3.1",
+    "react-dom18": "npm:react-dom@18.3.1",
+    "playwright-core": "1.56.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.1"
+  }
+}

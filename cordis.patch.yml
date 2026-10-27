@@ -1,0 +1,12 @@
+# DSH Excalidraw: one Host row owns the revision-checked scene store, the local
+# asset route, the browser API and the five agent tools. The browser half is a
+# dsh.client module registered into the main panel and the sidebar.
+- insert:
+    - id: dsh-excalidraw
+      name: 'dsh-excalidraw'
+      config:
+        drawingsDir: ''
+        maxSceneBytes: 16777216
+        maxElements: 5000
+        maxFiles: 64
+        maxTextLength: 20000

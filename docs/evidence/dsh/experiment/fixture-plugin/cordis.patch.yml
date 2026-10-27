@@ -1,0 +1,6 @@
+# Fixture row: proves a bundle patch insert appears in the composed profile tree.
+- insert:
+    - id: expt-fixture
+      name: dsh-expt-fixture
+      config:
+        label: hello-from-fixture

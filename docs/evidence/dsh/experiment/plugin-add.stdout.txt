@@ -1,0 +1,10 @@
+[WARN] The store at /Volumes/ZHITAI/pnpm/store/v11 is not used because packages cannot be hard linked from it into this project. Using the store at /Volumes/ZHITAI/DSHExcalidraw/.pnpm-store/v11 instead. Set storeDir to choose the store.
+Already up to date
+
+dependencies:
++ dsh-expt-fixture 0.0.1 <- ../../../fixture-plugin
+
+Done in 288ms using pnpm v11.28.5
+Update available! 11.28.5 → 12.15.0.
+Changelog: https://pnpm.io/v/12.15.0
+To update, run: pnpm self-update

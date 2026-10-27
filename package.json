@@ -1,0 +1,82 @@
+{
+  "name": "dsh-excalidraw",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Excalidraw core capabilities as a native DeepSeek Harness plugin: interactive scene editing, reliable .excalidraw persistence and typed agent tools.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "assets/**",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jegozhou/dsh-excalidraw.git"
+  },
+  "homepage": "https://github.com/Jegozhou/dsh-excalidraw",
+  "bugs": "https://github.com/Jegozhou/dsh-excalidraw/issues",
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "excalidraw",
+    "diagram",
+    "canvas",
+    "cordis"
+  ],
+  "dsh": {
+    "plugin": true,
+    "kind": "server",
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test test/",
+    "test:unit": "node --test test/unit/",
+    "test:integration": "node --test test/integration/",
+    "verify": "node scripts/verify.mjs",
+    "prepare": "node build.mjs"
+  },
+  "devDependencies": {
+    "@excalidraw/element": "0.18.0-f0063e113",
+    "@excalidraw/excalidraw": "0.18.1",
+    "@excalidraw/math": "0.18.0-f0063e113",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "esbuild": "^0.25.0",
+    "playwright-core": "^1.55.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "typescript": "^5.9.0"
+  }
+}

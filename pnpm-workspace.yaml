@@ -1,0 +1,3 @@
+allowBuilds:
+  esbuild: set this to true or false
+storeDir: /Volumes/ZHITAI/DSHExcalidraw/.cache/pnpm-store

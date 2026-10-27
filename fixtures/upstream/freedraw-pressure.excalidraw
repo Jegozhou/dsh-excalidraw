@@ -1,0 +1,110 @@
+{
+	"type": "excalidraw",
+	"version": 2,
+	"source": "app://obsidian.md",
+	"elements": [
+		{
+			"id": "freedraw-pen-stroke",
+			"type": "freedraw",
+			"x": 300,
+			"y": 300,
+			"width": 110,
+			"height": 55,
+			"angle": 0,
+			"strokeColor": "#e03131",
+			"backgroundColor": "transparent",
+			"fillStyle": "hachure",
+			"strokeWidth": 1.5,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"frameId": null,
+			"index": "a9",
+			"roundness": null,
+			"seed": 424242,
+			"version": 5,
+			"versionNonce": 171717,
+			"isDeleted": false,
+			"boundElements": [],
+			"updated": 1700000000000,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					8,
+					4
+				],
+				[
+					20,
+					9
+				],
+				[
+					38,
+					16
+				],
+				[
+					61,
+					27
+				],
+				[
+					88,
+					42
+				],
+				[
+					110,
+					55
+				]
+			],
+			"pressures": [
+				0.2,
+				0.35,
+				0.5,
+				0.65,
+				0.8,
+				0.95,
+				1
+			],
+			"simulatePressure": false,
+			"strokeOptions": {
+				"variability": "variable",
+				"streamline": 0.4
+			},
+			"customData": {
+				"strokeOptions": {
+					"highlighter": false,
+					"hasOutline": false,
+					"outlineWidth": 0,
+					"constantPressure": true,
+					"options": {
+						"smoothing": 0.4,
+						"thinning": -0.5,
+						"streamline": 0.4,
+						"easing": "linear",
+						"start": {
+							"taper": 5,
+							"cap": false,
+							"easing": "linear"
+						},
+						"end": {
+							"taper": 5,
+							"cap": false,
+							"easing": "linear"
+						}
+					}
+				}
+			},
+			"created": null,
+			"hasTextLink": false
+		}
+	],
+	"appState": {
+		"viewBackgroundColor": "#ffffff",
+		"gridSize": null
+	},
+	"files": {}
+}
