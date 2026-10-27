@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "sceneName": "e2e-mvr6z2sy",
+  "sceneName": "e2e-mvr7iq7z",
   "url": "http://127.0.0.1:49174/?token=<redacted>",
   "steps": [
     {
@@ -59,5 +59,5 @@
   "consoleErrors": [
     "Failed to load resource: the server responded with a status of 409 (Conflict)"
   ],
-  "generatedAt": "2026-10-27T21:23:19.842Z"
+  "generatedAt": "2026-10-27T21:38:36.813Z"
 }
