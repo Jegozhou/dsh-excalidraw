@@ -6,3 +6,6 @@ node_modules/
 test-results/
 spikes/render/node_modules/
 spikes/render/.cache/
+upstream/
+.tmp*
+spikes/render/artifacts/*.png
