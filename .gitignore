@@ -19,3 +19,4 @@ test/artifacts/
 test/e2e/artifacts/
 spikes/render/dsh-bundle/client.js
 spikes/render/dsh-bundle/lib/assets/
+.pnpm-store/
