@@ -2,7 +2,7 @@
 === typecheck ===
 $ /Volumes/ZHITAI/DSHExcalidraw/node_modules/.bin/tsc -p tsconfig.json --noEmit
 
-typecheck: PASS (681 ms)
+typecheck: PASS (703 ms)
 
 === build ===
 $ /Users/mozhouwen/.nvm/versions/node/v24.15.0/bin/node build.mjs
@@ -11,40 +11,40 @@ assets: 234 font files, 55 locale files, 141.4 KiB css
 browser half: lib/client.js 8.02 MiB
 resources: ok
 
-build: PASS (722 ms)
+build: PASS (765 ms)
 
 === unit tests ===
 $ /Users/mozhouwen/.nvm/versions/node/v24.15.0/bin/node --test test/unit/lifecycle.test.ts test/unit/elements.test.ts test/unit/store.test.ts test/unit/retry.test.ts
-✔ rectangle factory emits the full Excalidraw common field set (5.304834ms)
-✔ arrow factory computes bounds from relative points and defaults the head (0.171916ms)
-✔ text factory measures multiline text and uses Excalifont by default (0.215125ms)
-✔ image elements require an explicit fileId (0.209333ms)
-✔ unsafe links are dropped, http and element links survive (0.100375ms)
-✔ prototype-polluting keys are rejected (0.154625ms)
-✔ normalizeElement preserves unknown well-formed fields for round-trip fidelity (0.10775ms)
-✔ scene creation and serialization are stable (0.436334ms)
-✔ apply add/update/delete is atomic and repairs bindings (0.549333ms)
-✔ apply rejects unknown patch fields and changes atomically (0.124041ms)
-✔ validateScene reports duplicate ids and unsupported types (0.1015ms)
-✔ readable types are a documented superset of creatable types (0.034792ms)
-✔ activation registers five typed tools, two routes and one service (129.481ms)
-✔ configuration is clamped and defaults live under DSH_HOME (0.114ms)
-✔ a context without a web carrier still gets tools (3.576917ms)
-✔ apply retry returns the committed revision without mutating twice (135.953375ms)
-✔ a repeated save request id is idempotent and does not bump the revision (86.533584ms)
-✔ apply merges the app-state subset without dropping stored keys (80.331458ms)
-✔ create writes bytes + metadata and reports verified evidence (40.386584ms)
-✔ read returns the same revision and scene (52.798917ms)
-✔ stale revision is rejected and the file is untouched (94.560167ms)
-✔ a repeated request id is idempotent even with a stale fence (85.730167ms)
-✔ two store instances cannot both win the same revision (72.510833ms)
-✔ leftover temp files are ignored by list and read (20.905958ms)
-✔ a corrupt scene is recovered from the newest backup (55.062917ms)
-✔ a meta/scene hash mismatch is reconciled and the file wins (30.9705ms)
-✔ scene names cannot escape the drawings root (0.903541ms)
-✔ symlinked scene files are refused (1.020334ms)
-✔ unknown scenes fail with not_found (0.678916ms)
-✔ list reports invalid files without failing the whole listing (28.327917ms)
+✔ rectangle factory emits the full Excalidraw common field set (5.714792ms)
+✔ arrow factory computes bounds from relative points and defaults the head (0.175292ms)
+✔ text factory measures multiline text and uses Excalifont by default (0.219209ms)
+✔ image elements require an explicit fileId (0.225541ms)
+✔ unsafe links are dropped, http and element links survive (0.102ms)
+✔ prototype-polluting keys are rejected (0.1595ms)
+✔ normalizeElement preserves unknown well-formed fields for round-trip fidelity (0.106125ms)
+✔ scene creation and serialization are stable (0.4445ms)
+✔ apply add/update/delete is atomic and repairs bindings (0.48125ms)
+✔ apply rejects unknown patch fields and changes atomically (0.128083ms)
+✔ validateScene reports duplicate ids and unsupported types (0.098084ms)
+✔ readable types are a documented superset of creatable types (0.034ms)
+✔ activation registers five typed tools, two routes and one service (142.499791ms)
+✔ configuration is clamped and defaults live under DSH_HOME (0.106792ms)
+✔ a context without a web carrier still gets tools (12.355792ms)
+✔ apply retry returns the committed revision without mutating twice (123.114416ms)
+✔ a repeated save request id is idempotent and does not bump the revision (98.480625ms)
+✔ apply merges the app-state subset without dropping stored keys (77.706875ms)
+✔ create writes bytes + metadata and reports verified evidence (58.028917ms)
+✔ read returns the same revision and scene (53.242708ms)
+✔ stale revision is rejected and the file is untouched (96.834541ms)
+✔ a repeated request id is idempotent even with a stale fence (78.879ms)
+✔ two store instances cannot both win the same revision (58.053708ms)
+✔ leftover temp files are ignored by list and read (20.531334ms)
+✔ a corrupt scene is recovered from the newest backup (56.900167ms)
+✔ a meta/scene hash mismatch is reconciled and the file wins (27.895958ms)
+✔ scene names cannot escape the drawings root (0.674875ms)
+✔ symlinked scene files are refused (0.911916ms)
+✔ unknown scenes fail with not_found (0.48875ms)
+✔ list reports invalid files without failing the whole listing (24.148167ms)
 ℹ tests 30
 ℹ suites 0
 ℹ pass 30
@@ -52,38 +52,38 @@ $ /Users/mozhouwen/.nvm/versions/node/v24.15.0/bin/node --test test/unit/lifecyc
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 587.850291
+ℹ duration_ms 580.772167
 
-unit tests: PASS (619 ms)
+unit tests: PASS (605 ms)
 
 === integration tests ===
 $ /Users/mozhouwen/.nvm/versions/node/v24.15.0/bin/node --test test/integration/api.test.ts test/integration/fixtures.test.ts test/integration/bundle.test.ts
-✔ health reports the drawings directory and limits (19.059209ms)
-✔ create -> list -> read -> save -> read (61.569875ms)
-✔ stale save returns 409 with the current revision (4.692375ms)
-✔ invalid name and unknown scene use precise codes (1.177875ms)
-✔ invalid scene payload is rejected without writing (0.775375ms)
-✔ editor status records mount evidence and exposes it in health (1.131167ms)
-✔ the connection fence rejects every API and asset request (0.547167ms)
-✔ assets are served with the right content type and traversal is refused (1.493959ms)
-✔ unknown API routes and methods fail closed (0.575834ms)
-✔ oversized request bodies are rejected (44.310042ms)
-✔ service direct API matches HTTP semantics for apply (20.586166ms)
-✔ package manifest declares a bundle, a browser half and the expected exports (5.117167ms)
-✔ the patch row uses the package name and a config the plugin normalizes (0.867875ms)
-✔ the built client registers exactly the package id and keeps React external (13.266167ms)
-✔ the built host keeps the plugin contract exports (0.826208ms)
-✔ version strings agree across the manifest and both halves (0.964ms)
-✔ tool schemas are object-rooted and closed (0.180291ms)
-✔ locale resources carry real display metadata in both languages (0.855375ms)
-✔ the icon is an original, small, well-formed SVG (0.646ms)
-✔ the asset route inputs shipped with the package are present (7.234417ms)
-✔ every plain fixture parses, validates and is normalization-stable (9.758334ms)
-✔ fixtures exercise the documented compatibility categories (3.277667ms)
-✔ Fixtures preserve identity and every binding target (2.215375ms)
-✔ file attachments survive a normalize/serialize round-trip byte-for-byte (0.8785ms)
-✔ Obsidian Markdown envelopes are explicitly outside the supported range (1.933125ms)
-✔ a fixture can be persisted by the real store and read back semantically equal (35.3915ms)
+✔ health reports the drawings directory and limits (18.80375ms)
+✔ create -> list -> read -> save -> read (61.282667ms)
+✔ stale save returns 409 with the current revision (5.457791ms)
+✔ invalid name and unknown scene use precise codes (1.325041ms)
+✔ invalid scene payload is rejected without writing (0.76275ms)
+✔ editor status records mount evidence and exposes it in health (1.1225ms)
+✔ the connection fence rejects every API and asset request (0.574416ms)
+✔ assets are served with the right content type and traversal is refused (1.587791ms)
+✔ unknown API routes and methods fail closed (0.540208ms)
+✔ oversized request bodies are rejected (44.932ms)
+✔ service direct API matches HTTP semantics for apply (21.56675ms)
+✔ package manifest declares a bundle, a browser half and the expected exports (4.20775ms)
+✔ the patch row uses the package name and a config the plugin normalizes (1.1815ms)
+✔ the built client registers exactly the package id and keeps React external (15.12225ms)
+✔ the built host keeps the plugin contract exports (0.828875ms)
+✔ version strings agree across the manifest and both halves (1.339625ms)
+✔ tool schemas are object-rooted and closed (0.206292ms)
+✔ locale resources carry real display metadata in both languages (0.661958ms)
+✔ the icon is an original, small, well-formed SVG (0.616167ms)
+✔ the asset route inputs shipped with the package are present (10.068834ms)
+✔ every plain fixture parses, validates and is normalization-stable (9.355125ms)
+✔ fixtures exercise the documented compatibility categories (3.501458ms)
+✔ Fixtures preserve identity and every binding target (2.185916ms)
+✔ file attachments survive a normalize/serialize round-trip byte-for-byte (0.976667ms)
+✔ Obsidian Markdown envelopes are explicitly outside the supported range (1.705791ms)
+✔ a fixture can be persisted by the real store and read back semantically equal (36.54675ms)
 ℹ tests 26
 ℹ suites 0
 ℹ pass 26
@@ -91,7 +91,7 @@ $ /Users/mozhouwen/.nvm/versions/node/v24.15.0/bin/node --test test/integration/
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 3226.982834
+ℹ duration_ms 3228.51425
 
 integration tests: PASS (3252 ms)
 artifact lib/index.js: present
